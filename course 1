@@ -1,0 +1,3 @@
+1. Datei speichern                                                                           SAVE
+2. Server starten (zb. im Terminal mit den Befehl -> node app.js)                            EXECUTE
+3. (Web-)Seite Starten     zb. mit google chrome -> dort in die URL -> localhost:3000/test   RUN
