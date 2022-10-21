@@ -1,3 +1,7 @@
 1. Datei speichern                                                                           SAVE
 2. Server starten (zb. im Terminal mit den Befehl -> node app.js)                            EXECUTE
 3. (Web-)Seite Starten     zb. mit google chrome -> dort in die URL -> localhost:3000/test   RUN
+
+_________________________
+
+if (url === '/');    die drei = bedeuten: if ist nur true, wenn die url ein string ist und den wert hat.
