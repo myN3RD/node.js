@@ -7,3 +7,4 @@ _________________________
 if (url === '/');    die drei = bedeuten: if ist nur true, wenn die url ein string ist und den wert hat.
 
 Callback Function:
+3rd Party Packages sind "Dependencies"
