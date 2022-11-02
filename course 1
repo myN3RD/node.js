@@ -1,3 +1,5 @@
+NODE.JS iste is an Bckend Framework
+
 1. Datei speichern                                                                           SAVE
 2. Server starten (zb. im Terminal mit den Befehl -> node app.js)                            EXECUTE
 3. (Web-)Seite Starten     zb. mit google chrome -> dort in die URL -> localhost:3000/test   RUN
@@ -37,4 +39,4 @@ parser installieren:   npm install --save body-parser
 
 
 
-APIs  (Webserver)
+APIs  (Webserver) Application Programming Interface
