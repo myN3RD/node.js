@@ -35,15 +35,19 @@ parser installieren:   npm install --save body-parser
 
 
 
+TEMPLATING ENGINES
 
-
-PUG 
-Is an Templating Engine
+for example:
+PUG
+Handlebars
 
 
 MVC
 -Model View Controller-
 
+
+               Routes
+                 |
 Models Views Controllers
 
 =Seperation of Concerns
