@@ -40,6 +40,9 @@ TEMPLATING ENGINES
 for example:
 PUG
 Handlebars
+ejs         !IMPORTANT ejs does not support layouts. -> but theres is a solution for
+
+
 
 
 MVC
