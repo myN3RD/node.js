@@ -43,6 +43,18 @@ Handlebars
 ejs         !IMPORTANT ejs does not support layouts. -> but theres is a solution for
 
 
+ejs
+syntax: <% %>
+
+        <%= %>
+        <%- %>
+        
+inline if statement in javascript  with ?
+inline else statement in javascript with :
+
+example:  <a class="<%= path === 'admin/add-product' ? 'active' :  %>" href="/">Shop</a>
+
+
 
 
 MVC
