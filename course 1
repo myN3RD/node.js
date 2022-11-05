@@ -37,6 +37,8 @@ parser installieren:   npm install --save body-parser
 
 TEMPLATING ENGINES
 
+how to use? -> with  render  method
+
 for example:
 PUG
 Handlebars
