@@ -1,4 +1,7 @@
-NODE.JS is an Backend Framework
+NODE.JS 
+
+-is an Backend Framework
+-for Server Side Applications
 
 1. Datei speichern                                                                           SAVE
 2. Server starten (zb. im Terminal mit den Befehl -> node app.js)                            EXECUTE
