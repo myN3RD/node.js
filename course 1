@@ -1,4 +1,4 @@
-NODE.JS 
+NODE.JS                                                                                                                                     START 20.10.22
 
 -is an Backend Framework
 -for Server Side Applications
@@ -16,6 +16,9 @@ Callback Function:
 
 req bedeuet request
 res bedeutet response
+
+
+to sens a request we can use -> get
 
 
 
