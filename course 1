@@ -16,6 +16,7 @@ const   can not be reassigned, Is a Constant
 
 
 A Package is also called as a MODULE
+localhost     makes my own ip adress behave like a remote web server
 
 
 ('/')  Thats the Starting Page
@@ -27,10 +28,22 @@ Callback Function:
 
 
 req       means request
+
+get       get request to a certain url
+post      intend is to modify(change) data 
+patch     intend is to modify(change) data 
+
 res       means response
 export    allows that a MODUL can be used in another file
 exports
 import    allows a file to consume a MODUL (which is exported)
+
+
+STATUSCODES
+
+200 Success
+4** Client Error
+5** Server Error
 
 
 to send a request we can use -> get
