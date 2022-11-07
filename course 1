@@ -9,7 +9,10 @@ NODE.JS                                                                         
 
 _________________________
 
+('/')  Thats the Starting Page
 if (url === '/');    die drei = bedeuten: if ist nur true, wenn die url ein string ist und den wert hat.
+
+
 
 Callback Function:
 
@@ -18,7 +21,7 @@ req bedeuet request
 res bedeutet response
 
 
-to sens a request we can use -> get
+to send a request we can use -> get
 
 
 
