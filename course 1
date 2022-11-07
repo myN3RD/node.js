@@ -10,6 +10,14 @@ NODE.JS                                                                         
 
 _________________________
 
+Ways to declare a Variable
+let     can be reassigned in the future
+const   can not be reassigned, Is a Constant
+
+
+A Package is also called as a MODULE
+
+
 ('/')  Thats the Starting Page
 if (url === '/');    die drei = bedeuten: if ist nur true, wenn die url ein string ist und den wert hat.
 
@@ -18,8 +26,11 @@ if (url === '/');    die drei = bedeuten: if ist nur true, wenn die url ein stri
 Callback Function:
 
 
-req bedeuet request
-res bedeutet response
+req       means request
+res       means response
+export    allows that a MODUL can be used in another file
+exports
+import    allows a file to consume a MODUL (which is exported)
 
 
 to send a request we can use -> get
