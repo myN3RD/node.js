@@ -35,8 +35,10 @@ EXAMPLE....
 
 Type: (of requests)
 get       get request to a certain url
-post      intend is to modify(change) data 
-patch     intend is to modify(change) data 
+post      intend is to modify(change) data  or  create something 
+patch     intend is to modify(change) data
+put
+delete
 
 __________________________________________
 
@@ -50,15 +52,17 @@ res       means response  (Server)Backend (is now saving the data to a Database 
 app.post(‘/orders‘, (req, res) => {                        // was bedeutet app. ???    link: youtube -> supersimpledev Video: backend web development
   const order = createOrder(req);
   database.save(order);
-  response.send('Order confirmed.');
+  res.send('Order confirmed.');
 });
 
 app.get(‘/orders‘, (req, res) => {
   const orders = database.getOrderHistory();
-  response.json(orders);
+  res.json(orders);
 });
 
 app.delete('/orders', (req, res) => {
+  database.cancelOrder(req);
+  res.json('Order canceled.');
 });
 
           
