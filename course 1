@@ -50,7 +50,7 @@ to send a request we can use -> get
 
 
 
-NPM
+NPM (Package Manager)
 3rd Party Packages sind "Dependencies" -> findet man unter  npm Repository
 Zum installieren ->
 Befehl: npm install name
