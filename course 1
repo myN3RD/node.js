@@ -27,13 +27,32 @@ if (url === '/');    die drei = bedeuten: if ist nur true, wenn die url ein stri
 Callback Function:
 
 
-req       means request
+req       means request  (Client)Frontend is sending a request to the (Server)Backend
 
+- requests will be included in html and css and ... (Frontend)files
+
+EXAMPLE....
+
+Type: (of requests)
 get       get request to a certain url
 post      intend is to modify(change) data 
 patch     intend is to modify(change) data 
 
-res       means response
+__________________________________________
+
+
+res       means response  (Server)Backend (is now saving the data to a Database ) and after, is sending a response to the (Client)Frontend
+
+          Its called a Request-Response Cycle
+          
+- In the Backend(files) we define what types of requests are allowed- and how we handle these requests
+
+app.post(‘/order‘, (req, res) => {
+  const order = createOrder(req);
+  database.save(order);
+  response.send('Order confirmed.');
+});
+          
 export    allows that a MODUL can be used in another file
 exports
 import    allows a file to consume a MODUL (which is exported)
