@@ -3,6 +3,7 @@ NODE.JS                                                                         
 -is an Backend Framework
 -for Server Side Applications
 -is an API
+-allows to run javascript on a server
 
 1. Datei speichern                                                                           SAVE
 2. Server starten (zb. im Terminal mit den Befehl -> node app.js)                            EXECUTE
@@ -20,11 +21,18 @@ localhost     makes my own ip adress behave like a remote web server
 
 
 ('/')  Thats the Starting Page
-if (url === '/');    die drei = bedeuten: if ist nur true, wenn die url ein string ist und den wert hat.
+... JavaScript object spread operator                        https://www.javascripttutorial.net/es-next/javascript-object-spread/
+if (url === '/');    die drei = bedeuten: if ist nur true, wenn die url ein string ist und den Wert hat.
 
 
+Events, Event Loop:
 
 Callback Function:
+
+
+EXAMPLE: process.on('exit', function() {
+                                 ↑
+})                            CALLBACK
 
 
 req       means request  (Client)Frontend is sending a request to the (Server)Backend
