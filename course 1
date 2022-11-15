@@ -12,7 +12,20 @@ NODE.JS                                                                         
 
 require KEYWORD -> to import files
 
-_________________________
+______________________________________________
+CREATING A NEW SERVER
+
+const http = require('http');
+
+const server = http.createServer((req, res) => {       // create server callback function
+    console.log(req);
+});
+
+server.listen(3000);                                    // looping process (Event Loop)  -> keep on listening for requests
+
+// *** THATS ALL WE NEED TO CREATE A NEW SERVER ***
+
+______________________________________________
 
 Ways to declare a Variable
 let     can be reassigned in the future
