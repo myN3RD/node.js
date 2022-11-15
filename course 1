@@ -4,6 +4,7 @@ NODE.JS                                                                         
 -for Server Side Applications
 -is an API
 -allows to run javascript on a server
+-package.json => file includes all the packages which have installed in node
 
 1. Datei speichern                                                                           SAVE
 2. Server starten (zb. im Terminal mit den Befehl -> node app.js)                            EXECUTE
