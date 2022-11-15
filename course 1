@@ -29,6 +29,10 @@ ______________________________________________
 
 (run in terminal) npm init -> to get the package.json (file) => file includes all the packages which have installed in node
 
+npm install nodemon --save-dev
+
+______________________________
+
 Ways to declare a Variable
 let     can be reassigned in the future
 const   can not be reassigned, Is a Constant
