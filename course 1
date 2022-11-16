@@ -102,6 +102,20 @@ export    allows that a MODUL can be used in another file
 exports
 import    allows a file to consume a MODUL (which is exported)
 
+HOW TO CONNECT HTML File with another File
+
+const path = require('path');   ****** WITH THIS LINE
+const express = require('express');         // for  the export to app.js file
+
+const router = express.Router();            // for  the export to app.js file
+
+router.use('/', (req, res, next) => {   // we have to use the name router in the front
+    res.sendFile(path.join(__dirname, '../', 'views', 'page.html'));  **** WITH THIS LINE AS WELL // !!! sendFile !!! to connect with the html file
+});
+
+module.exports = router;                    // for  the export to app.js file
+
+
 
 STATUSCODES
 
