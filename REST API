@@ -1,6 +1,26 @@
 Re presentational S tate T ransfer
 
-- we transfer Data instead of User Interfaces
+- we transfer DATA instead of User Interfaces
 - a different kind of response is needed
 
 !- only the response and request data changes. NOT the general server-side logic!
+
+
+DATA FORMATS we can exchange
+
+HTML, Plain Text, XML, JSON
+                         ↑
+                       WINNER if we just want to transfer Data
+                       
+                       
+                       
+                       Routing
+  C                                             S   
+  L           → → → → → →  POST /post           E
+  I           → → → → → →  GET /posts           R     Server-side Logic,
+  E           → → → → → →  GET /posts/:postId   V     Database Access etc.
+  N                                             E
+  T                                             R
+  
+                           "API Endpoints"
+
