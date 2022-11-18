@@ -29,4 +29,15 @@ HTML, Plain Text, XML, JSON
                            
   POST Post a resource to the server -> Thats what we use actually everytime
   GET get a resource from the server
+  
+  
+  
+        REST Prinziples
+  
+Uniform Interface                   Stateless Interaction
+
+Clearly defined API Endpoints                 Topic: Authentication 
+will clearly difined request +      Server and Client dont store any connection history
+response data structure             , every request is handled seperately
+  
 
