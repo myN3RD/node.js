@@ -66,8 +66,8 @@ req       means request  (Client)Frontend is sending a request to the (Server)Ba
 EXAMPLE....
 
 Type: (of requests)
-get       get request to a certain url
-post      intend is to modify(change) data  or  create something 
+get       get request to a certain url                                  get a resource from the server
+post      intend is to modify(change) data  or  create something        post a resource to the server
 patch     intend is to modify(change) data
 put
 delete
