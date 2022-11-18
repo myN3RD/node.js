@@ -1,0 +1,6 @@
+Re presentational S tate T ransfer
+
+- we transfer Data instead of User Interfaces
+- a different kind of response is needed
+
+!- only the response and request data changes. NOT the general server-side logic!
