@@ -15,12 +15,18 @@ HTML, Plain Text, XML, JSON
                        
                        
                        Routing
-  C                                             S   
-  L           → → → → → →  POST /post           E
-  I           → → → → → →  GET /posts           R     Server-side Logic,
-  E           → → → → → →  GET /posts/:postId   V     Database Access etc.
-  N                                             E
-  T                                             R
-  
-                           "API Endpoints"
+  C                                               S   
+  L           → → → → → → | POST /post        |   E
+  I           → → → → → → | GET /posts        |   R     Server-side Logic,
+  E           → → → → → → | GET /posts/:postId|   V     Database Access etc.
+  N                       |                   |   E
+  T                       |                   |   R
+                          |                   |
+                          |  "API Endpoints"  |
+                          |___________________| 
+                           
+        HTTP Methods
+                           
+  POST Post a resource to the server -> Thats what we use actually everytime
+  GET get a resource from the server
 
