@@ -68,9 +68,9 @@ EXAMPLE....
 Type: (of requests)
 get       get request to a certain url                                  get a resource from the server
 post      intend is to modify(change) data  or  create something        post a resource to the server
-patch     intend is to modify(change) data
+patch     intend is to modify(change) data                              update parts off an existing resource on the server
 put
-delete
+delete    delete a resource on the server
 
 __________________________________________
 
