@@ -179,7 +179,7 @@ MVC
                  |
 Models Views Controllers
 
-=Seperation of Concerns
+= Seperation of Concerns
 
 
 
@@ -190,3 +190,7 @@ REST      |       GraphQL
 
 Types of Requests that the Backend allows -> calls API
 .
+
+HOW TO SETUP COOKIES
+
+  res.setHeader('Set-Cookie', 'loggedIn = true');
