@@ -191,6 +191,17 @@ REST      |       GraphQL
 Types of Requests that the Backend allows -> calls API
 .
 
+____________________________________________
+
+
+COOKIES
 HOW TO SETUP COOKIES
 
   res.setHeader('Set-Cookie', 'loggedIn=true');
+  
+  
+SESSIONS
+
+- is only for one user
+- Cookies are on the client side
+- Sessions are on the SERVER SIDE
