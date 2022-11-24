@@ -205,3 +205,5 @@ SESSIONS        npm install --save express-session
 - is only for one user
 - Cookies are on the client side
 - Sessions are on the SERVER SIDE
+
+How to use sessions with mongodb        npm install --save connect-mongodb-session
