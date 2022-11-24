@@ -200,7 +200,7 @@ HOW TO SETUP COOKIES
   res.setHeader('Set-Cookie', 'loggedIn=true');
   
   
-SESSIONS
+SESSIONS        npm install --save express-session
 
 - is only for one user
 - Cookies are on the client side
