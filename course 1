@@ -40,6 +40,8 @@ adding at the package json file to -> "scripts": {
 
 2. npm install nodemon --save-dev
 
+3. npm install --save express               
+
 3. npm install --save mongodb
 
 4. npm install --save body-parser. ???
