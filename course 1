@@ -34,6 +34,10 @@ ______________________________________________
 
 1. (run in terminal) npm init -> to get the package.json (file) => file includes all the packages which have installed in node
 
+adding at the package json file to -> "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"                                  // this line that he will execute automaticly
+
 2. npm install nodemon --save-dev
 
 3. npm install --save mongodb
