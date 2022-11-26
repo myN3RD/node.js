@@ -36,7 +36,7 @@ ______________________________________________
 
 adding at the package json file to -> "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"                                  // this line that he will execute automaticly
+    "start": "nodemon app.js"                                  // this line that the app will execute automaticly -> after nodemon installation
 
 2. npm install nodemon --save-dev
 
