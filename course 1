@@ -15,6 +15,11 @@ require KEYWORD -> to import files
 ______________________________________________
 CREATING A NEW SERVER
 
+adding a file -> app.js => its the route file to start a server with node.js
+
+
+
+
 const http = require('http');
 
 const server = http.createServer((req, res) => {       // create server callback function
@@ -27,13 +32,13 @@ server.listen(3000);                                   // looping process (Event
 
 ______________________________________________
 
-(run in terminal) npm init -> to get the package.json (file) => file includes all the packages which have installed in node
+1. (run in terminal) npm init -> to get the package.json (file) => file includes all the packages which have installed in node
 
-npm install nodemon --save-dev
+2. npm install nodemon --save-dev
 
-npm install --save mongodb
+3. npm install --save mongodb
 
-npm install --save body-parser. ???
+4. npm install --save body-parser. ???
 
 ______________________________
 
