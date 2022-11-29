@@ -220,3 +220,8 @@ SESSIONS        npm install --save express-session
 - Sessions are on the SERVER SIDE
 
 How to use sessions with mongodb        npm install --save connect-mongodb-session
+
+
+PASSWORD ENCRYPTION
+
+- npm install --save bcrytjs
