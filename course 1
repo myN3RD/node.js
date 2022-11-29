@@ -224,4 +224,4 @@ How to use sessions with mongodb        npm install --save connect-mongodb-sessi
 
 PASSWORD ENCRYPTION
 
-- npm install --save bcrytjs
+- npm install bcryt
