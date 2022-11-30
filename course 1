@@ -225,3 +225,10 @@ How to use sessions with mongodb        npm install --save connect-mongodb-sessi
 PASSWORD ENCRYPTION
 
 - npm install bcryt
+
+
+CSRF PROTECTION
+
+- npm install --save csurf
+
+- -> now we can use a CSRF Token (a string value)
