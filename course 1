@@ -206,6 +206,10 @@ Types of Requests that the Backend allows -> calls API
 
 ____________________________________________
 
+SENDING E-MAIL <how to>
+
+we have to use a third party service (Mail Service)
+
 
 COOKIES
 HOW TO SETUP COOKIES
