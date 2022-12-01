@@ -210,6 +210,7 @@ SENDING E-MAIL <how to>
 
 we have to use a third party service (Mail Service)
 - npm install --save nodemailer
+- npm install --save nodemailer nodemailer-sendgrid-transport
 
 
 COOKIES
