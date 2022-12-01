@@ -209,6 +209,7 @@ ____________________________________________
 SENDING E-MAIL <how to>
 
 we have to use a third party service (Mail Service)
+- npm install --save nodemailer
 
 
 COOKIES
