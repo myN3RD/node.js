@@ -1,5 +1,6 @@
 NODE.JS                                                                                                                                     START 20.10.22
 
+-Express is a Framework for Node.js
 -is an Backend Framework
 -for Server Side Applications
 -is an API
@@ -16,7 +17,6 @@ ______________________________________________
 CREATING A NEW SERVER
 
 adding a file -> app.js => its the route file to start a server with node.js
-
 
 
 
