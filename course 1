@@ -58,7 +58,7 @@ A Package is also called as a MODULE
 localhost     makes my own ip adress behave like a remote web server
 
 
-('/')  Thats the Starting Page
+('/')  Thats the Starting Page (the root)
 ... JavaScript object spread operator                        https://www.javascripttutorial.net/es-next/javascript-object-spread/
 if (url === '/');    die drei = bedeuten: if ist nur true, wenn die url ein string ist und den Wert hat.
 
@@ -116,7 +116,9 @@ export    allows that a MODUL can be used in another file
 exports
 import    allows a file to consume a MODUL (which is exported)
 
-HOW TO CONNECT HTML File with another File
+____________________________________________
+
+ROUTING ------ HOW TO CONNECT HTML File with another File
 
 const path = require('path');   ****** WITH THIS LINE
 const express = require('express');         // for  the export to app.js file
@@ -138,9 +140,6 @@ STATUSCODES
 5** Server Error
 
 
-to send a request we can use -> get
-
-
 
 NPM (Package Manager)
 3rd Party Packages sind "Dependencies" -> findet man unter  npm Repository
@@ -154,8 +153,6 @@ Runtime Erros / hat wohl nich nanderen Namen
 Logical Errors            (werden nicht angezeigt) ---> findet man ggf. mit dem "debugger"
 
   
-      EXPRESS.JS
-Ist eines von vielen Frameworks
 
 parser installieren:   npm install --save body-parser
 
