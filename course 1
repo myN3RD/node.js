@@ -11,7 +11,8 @@ NODE.JS                                                                         
 2. Server starten (zb. im Terminal mit den Befehl -> node app.js                             EXECUTE
 3. (Web-)Seite Starten     zb. mit google chrome -> dort in die URL -> localhost:3000/test   RUN
 
-require KEYWORD -> to import files
+require KEYWORD -> to import files 
+                -> or npm packages
 
 ______________________________________________
 CREATING A NEW SERVER
