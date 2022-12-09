@@ -1,7 +1,13 @@
 Re presentational S tate T ransfer
 
-- we transfer DATA instead of User Interfaces
+- we transfer DATA instead of User Interfaces from someone elses server to our server
 - a different kind of response is needed
+
+4 Points we have to think about:
+  • Endpoints
+  • Paths
+  • Parameters
+  • Authentification
 
 !- only the response and request data changes. NOT the general server-side logic!
 
@@ -15,15 +21,15 @@ HTML, Plain Text, XML, JSON
                        
                        
                        Routing
-  C                                               S   
-  L           → → → → → → | POST /post        |   E
-  I           → → → → → → | GET /posts        |   R     Server-side Logic,
-  E           → → → → → → | GET /posts/:postId|   V     Database Access etc.
-  N                       |                   |   E
-  T                       |                   |   R
-                          |                   |
-                          |  "API Endpoints"  |
-                          |___________________| 
+  C                                                S   
+  L           → → → → → → | POST /post         |   E
+  I           → → → → → → | GET /posts         |   R     Server-side Logic,
+  E           → → → → → → | GET /posts/:postId |   V     Database Access etc.
+  N                       |                    |   E
+  T                       |                    |   R
+                          |                    |
+                          |  "API Endpoints"   |
+                          |____________________| 
                            
         HTTP Methods
                            
