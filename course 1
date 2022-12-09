@@ -15,7 +15,9 @@ require KEYWORD -> to import files
                 -> or npm packages
 
 ______________________________________________
-CREATING A NEW SERVER
+
+
+      CREATING A NEW SERVER
 
 adding a file -> app.js => its the route file to start a server with node.js
 
@@ -47,11 +49,15 @@ optional                 npm install --save mongodb
 
 optional BODY PARSER     npm install --save body-parser    // we just need a body parser if our website should handle http POST request data
 
-______________________________
+____________________________________________
+
+
+      VARIABLES
 
 Ways to declare a Variable
 let     can be reassigned in the future
 const   can not be reassigned, Is a Constant
+____________________________________________
 
 
 A Package is also called as a MODULE
@@ -118,7 +124,7 @@ import    allows a file to consume a MODUL (which is exported)
 
 ____________________________________________
 
-ROUTING ------ HOW TO CONNECT HTML File with another File
+      ROUTING ------ HOW TO CONNECT HTML File with another File
 
 const path = require('path');   ****** WITH THIS LINE
 const express = require('express');         // for  the export to app.js file
@@ -131,9 +137,9 @@ router.use('/', (req, res, next) => {   // we have to use the name router in the
 
 module.exports = router;                    // for  the export to app.js file
 
+____________________________________________
 
-
-STATUSCODES
+      STATUSCODES
 
 200 Success
 4** Client Error
@@ -147,7 +153,8 @@ Zum installieren ->
 Befehl: npm install name
 
 
-TYPES OF ERRORS
+      TYPES OF ERRORS
+      
 Syntax Errors = Typos
 Runtime Erros / hat wohl nich nanderen Namen
 Logical Errors            (werden nicht angezeigt) ---> findet man ggf. mit dem "debugger"
@@ -158,7 +165,7 @@ parser installieren:   npm install --save body-parser
 
 
 
-TEMPLATING ENGINES
+      TEMPLATING ENGINES
 
 how to use? -> with  render  method
 
@@ -182,7 +189,8 @@ example:  <a class="<%= path === 'admin/add-product' ? 'active' : '' %>" href="/
 
 
 
-MVC
+      MVC
+      
 -Model View Controller-
 
 
@@ -192,10 +200,11 @@ Models Views Controllers
 
 = Seperation of Concerns
 
+____________________________________________
 
 
-
-APIs  (Webserver) Application Programming Interface
+      APIs  (Webserver) Application Programming Interface
+      
 
 REST      |       GraphQL..
 
@@ -204,20 +213,21 @@ Types of Requests that the Backend allows -> calls API
 
 ____________________________________________
 
-SENDING E-MAIL <how to>
+      SENDING E-MAIL <how to>
 
 we have to use a third party service (Mail Service)
 - npm install --save nodemailer
 - npm install --save nodemailer nodemailer-sendgrid-transport
 
 
-COOKIES
-HOW TO SETUP COOKIES
+
+      COOKIES     HOW TO SETUP COOKIES
 
   res.setHeader('Set-Cookie', 'loggedIn=true');
   
   
-SESSIONS        npm install --save express-session
+  
+      SESSIONS        npm install --save express-session
 
 - is only for one user
 - Cookies are on the client side
@@ -226,7 +236,8 @@ SESSIONS        npm install --save express-session
 How to use sessions with mongodb        npm install --save connect-mongodb-session
 
 
-PASSWORD ENCRYPTION
+
+      PASSWORD ENCRYPTION
 
 - npm install bcryt
 
