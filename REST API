@@ -32,13 +32,16 @@ HTML, Plain Text, XML, JSON
                           |____________________| 
                            
         HTTP Methods
-                           
-  POST Post a resource to the server -> Thats what we use actually everytime
-  GET get a resource from the server
+   
+  GET (request) to get a resource or data from the server
+      the response is giving us the resoure or data back to the client.
+      
+  POST (request) Post a resource from the client to the server -> Thats what we use actually everytime
+ 
   
   
   
-        REST Prinziples
+        REST Principles
   
 Uniform Interface                   Stateless Interaction
 
