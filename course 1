@@ -61,7 +61,7 @@ ____________________________________________
 
 
 A Package is also called as a MODULE
-localhost     makes my own ip adress behave like a remote web server
+localhost:  makes my own ip adress behave like a remote web server
 
 
 ('/')  Thats the Starting Page (the root)
@@ -71,7 +71,11 @@ if (url === '/');    die drei = bedeuten: if ist nur true, wenn die url ein stri
 
 Events, Event Loop:
 
-Callback Function:
+____________________________________________
+
+      FUNCTION
+
+Callback Function: Will be called when 'exit' in this case is done. 
 
 
 EXAMPLE: process.on('exit', function() {
