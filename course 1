@@ -170,9 +170,10 @@ Syntax Errors = Typos
 Runtime Erros / hat wohl nich nanderen Namen
 Logical Errors            (werden nicht angezeigt) ---> findet man ggf. mit dem "debugger"
 
+CORS Error -> solving only on our?? server
+
   
 
-parser installieren:   npm install --save body-parser
 
 
 
