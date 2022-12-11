@@ -2,6 +2,7 @@ Re presentational S tate T ransfer
 
 - we transfer DATA instead of User Interfaces from someone elses server to our server
 - a different kind of response is needed
+- we dont call  render  like  res.render, cause APIs not render views -> they don return html files. And a rendered view is an html file 
 
 4 Points we have to think about:
   • Endpoints
