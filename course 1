@@ -46,10 +46,13 @@ adding at the package json file to -> "scripts": {
     "start": "nodemon app.js"                                  // this line that the app will execute automaticly -> after nodemon installation
               
 
+
+4. If we want use ROUTES
+   npm install --save body-parser    // we just need a body parser if our website should handle http POST request data
+                                     // for parsing incoming request bodys
+
+
 optional                 npm install --save mongodb
-
-optional BODY PARSER     npm install --save body-parser    // we just need a body parser if our website should handle http POST request data
-
 ____________________________________________
 
 
@@ -90,7 +93,10 @@ req       means request  (Client)Frontend is sending a request to the (Server)Ba
 
 EXAMPLE....
 
+
 Type: (of requests)
+
+use       for handle any method
 get       get request to a certain url                                  get a resource from the server
 post      intend is to modify(change) data  or  create something        post a resource to the server
 patch     intend is to modify(change) data                              update parts off an existing resource on the server
