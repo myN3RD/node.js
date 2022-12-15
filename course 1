@@ -278,3 +278,14 @@ ____________________________________________
 
 - npm install --save connect-flash
 The flash is a special area of the session used for storing messages. Messages are written to the flash and cleared after being displayed to the user. 
+
+
+____________________________________________
+
+
+      WEBSOCKETS
+      
+- we PUSH data from the server to -> the client
+- socket.IO is recommended
+
+npm install --save socket.io
