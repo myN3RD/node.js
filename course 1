@@ -289,3 +289,4 @@ ____________________________________________
 - socket.IO is recommended
 
 npm install --save socket.io
+npm install --save socket.io-client
