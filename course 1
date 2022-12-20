@@ -202,6 +202,8 @@ ____________________________________________
 
 
       FOR DYNAMIC OR REALTIME FEATURES IN THE FRONTEND ---> we use --->  TEMPLATING ENGINES
+      
+      or View Engine. Thats why we need in this case when we are using EJS for example, we need a Views folder!
 
 
 for example:
