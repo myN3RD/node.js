@@ -203,7 +203,6 @@ ____________________________________________
 
       FOR DYNAMIC OR REALTIME FEATURES IN THE FRONTEND ---> we use --->  TEMPLATING ENGINES
 
-how to use? -> with  render  method
 
 for example:
 PUG
@@ -212,7 +211,9 @@ Handlebars
 EJS
 - IMPORTANT ejs does not support layouts. -> but theres is a solution for
 
-                    npm install ejs
+                   1. npm install ejs
+                    
+                   2. ADD to app.js file!:    app.use('view engine', 'ejs');
 
 syntax: <% %>
 
@@ -223,6 +224,9 @@ inline if statement in javascript  with ?
 inline else statement in javascript with :
 
 example:  <a class="<%= path === 'admin/add-product' ? 'active' : '' %>" href="/">Shop</a>
+
+
+how to use? -> with  render  method
 
 ____________________________________________
 
