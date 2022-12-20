@@ -201,17 +201,19 @@ CORS Error (Lektion 366) -> solving only on our?? server
 ____________________________________________
 
 
-      TEMPLATING ENGINES
+      FOR DYNAMIC OR REALTIME FEATURES IN THE FRONTEND ---> we use --->  TEMPLATING ENGINES
 
 how to use? -> with  render  method
 
 for example:
 PUG
 Handlebars
-ejs         !IMPORTANT ejs does not support layouts. -> but theres is a solution for
 
+EJS
+- IMPORTANT ejs does not support layouts. -> but theres is a solution for
 
-ejs
+                    npm install ejs
+
 syntax: <% %>
 
         <%= %>
