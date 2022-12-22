@@ -217,9 +217,9 @@ EJS
                     
                    2. ADD to app.js file!:    app.use('view engine', 'ejs');
 
-syntax: <% %>
+syntax: <% %>     with this we can use javascripot in a html file. EVERY line which is NOT html, must be embedded with <% .... %> 
 
-        <%= %>
+        <%= %>    to import dynamic values into a html file   <h1> <%= value %> </h1>
         <%- %>
         
 inline if statement in javascript  with ?
@@ -229,6 +229,7 @@ example:  <a class="<%= path === 'admin/add-product' ? 'active' : '' %>" href="/
 
 
 how to use? -> with  render  method
+res.render....
 
 ____________________________________________
 
