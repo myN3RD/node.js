@@ -126,6 +126,11 @@ patch     intend is to modify(change) data                              update p
 put
 delete    delete a resource on the server
 
+
+      271
+get 
+post
+
 __________________________________________
 
 
@@ -235,6 +240,16 @@ example:  <a class="<%= path === 'admin/add-product' ? 'active' : '' %>" href="/
 how to use? -> with  render  method
 res.render....
 
+
+
+header and footer for all sites:
+
+making seperate header and footer .ejs files
+
+add these lines
+
+<%- include('header.ejs') -%>
+<%- include('footer.ejs') -%>
 ____________________________________________
 
 
