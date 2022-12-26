@@ -16,24 +16,7 @@ require KEYWORD -> to import files
 
 ______________________________________________
 
-
-      CREATING A NEW SERVER
-
-adding a file -> app.js => its the route file to start a server with node.js
-
-
-
-const http = require('http');
-
-const server = http.createServer((req, res) => {       // create server callback function
-    console.log(req);
-});
-
-server.listen(3000);                                   // looping process (Event Loop)  -> keep on listening for requests
-
-// *** THATS ALL WE NEED TO CREATE A NEW SERVER ***
-
-______________________________________________
+      SETUP VSCode
 
 1. (run in terminal) npm init -> to get the package.json (file) => file includes all the packages which have installed in node
 
@@ -53,7 +36,27 @@ adding at the package json file to -> "scripts": {
 
 
 optional                 npm install --save mongodb
-____________________________________________
+
+______________________________________________
+
+
+      CREATING A NEW SERVER
+
+adding a file -> app.js => its the route file to start a server with node.js
+
+
+
+const http = require('http');
+
+const server = http.createServer((req, res) => {       // create server callback function
+    console.log(req);
+});
+
+server.listen(3000);                                   // looping process (Event Loop)  -> keep on listening for requests
+
+// *** THATS ALL WE NEED TO CREATE A NEW SERVER ***
+
+______________________________________________
 
 
       IMAGES / FOLDER IMPORT
