@@ -385,3 +385,13 @@ ____________________________________________
 
 npm install --save socket.io
 npm install --save socket.io-client
+
+____________________________________________
+
+
+
+      LODASH          https://lodash.com
+      
+npm i --save lodash
+
+
