@@ -182,6 +182,16 @@ module.exports = router;                    // for  the export to app.js file
 
 ________________________
 
+     Routing ejs files !?!?
+     
+     
+app.get('/', function(req, res) {
+    res.render('home.ejs'); 
+});
+
+
+_______________________
+
 How to use more than one export from one file:    // Lektion 272
 
 
