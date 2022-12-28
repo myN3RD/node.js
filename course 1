@@ -394,4 +394,4 @@ ____________________________________________
       
 npm i --save lodash
 
-
+const _ = require('lodash');
