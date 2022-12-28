@@ -252,7 +252,7 @@ CORS Error (Lektion 366) -> solving only on our?? server
 ____________________________________________
 
 
-      FOR DYNAMIC OR REALTIME FEATURES IN THE FRONTEND ---> we use --->  TEMPLATING ENGINES
+      FOR       DYNAMIC       OR REALTIME CONTENT / FEATURES IN THE FRONTEND ---> we use --->  TEMPLATING ENGINES
       
       or View Engine. Thats why we need in this case when we are using EJS for example, we need a Views folder!
 
@@ -292,6 +292,18 @@ add these lines
 
 <%- include('header.ejs') -%>
 <%- include('footer.ejs') -%>
+
+
+
+DYNAMIC CONTENT
+
+<% posts.forEach(function(post) { %>        <!-- this is doing the same like a for loop -->
+<%     console.log(post.content); %>
+
+<!-- MAGIC LINE to include it into the website  LEKTION 304 -->
+<p> <%= post.content %> </p>            
+<% }); %>
+
 ____________________________________________
 
 
