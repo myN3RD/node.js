@@ -179,6 +179,29 @@ router.use('/', (req, res, next) => {   // we have to use the name router in the
 
 module.exports = router;                    // for  the export to app.js file
 
+
+________________________
+
+How to use more than one export from one file:    // Lektion 272
+
+
+module.exports.getDate = getDate;
+
+function getDate() {
+}
+
+......
+
+module.exports.getDay = getDay;
+
+function getDay() {
+}
+
+and than requirering the FILE in the app.js file ->
+
+const date = require(__dirname + '/date.js');     
+
+
 ____________________________________________
 
 
