@@ -184,12 +184,21 @@ ________________________
 
      Routing ejs files !?!?
      
+     Static Side:
      
 app.get('/', function(req, res) {
     res.render('home.ejs');                 // also worked without .ejs 
 });
 
 
+    With Dynamic Content:
+    
+app.get('/', function(req, res) {
+    res.render('home.ejs', {startingContent: homeStartingContent}); 
+});                               ↑                   ↑ 
+                                 Key                Value
+                         (name in ejs file)    (name in app.js file)
+                         
 _______________________
 
 How to use more than one export from one file:    // Lektion 272
