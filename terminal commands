@@ -1,2 +1,12 @@
 clear  = löscht ganzen Inhalt des Terminals
 rs     = restart !?
+
+
+
+
+
+
+MAC TERMINAL
+
+cd ~   = home directory
+pwd    = shows the current path
