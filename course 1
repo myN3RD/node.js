@@ -409,3 +409,10 @@ ____________________________________________
 npm i --save lodash
 
 const _ = require('lodash');
+
+____________________________________________
+
+
+      OAUTH
+
+https://www.passportjs.org/packages/passport-google-oauth20/
