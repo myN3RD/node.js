@@ -6,4 +6,6 @@ handlebars  https://www.npmjs.com/package/express-handlebars
 
 MVC         https://developer.mozilla.org/en-US/docs/Glossary/MVC
 
+Websockets  https://socket.io/docs/v4/client-installation/
+
   FAB       https://robomongo.org/
