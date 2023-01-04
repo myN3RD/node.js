@@ -360,7 +360,9 @@ ____________________________________________
 
       PASSWORD ENCRYPTION
 
-- npm install bcryt
+npm install bcryt
+
+const bcrypt = require('bcrypt');
 
 ____________________________________________
 
