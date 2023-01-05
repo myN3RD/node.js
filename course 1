@@ -363,6 +363,12 @@ ____________________________________________
 npm install bcryt
 
 const bcrypt = require('bcrypt');
+const saltRounds = 12;              // 12 rounds is enough these days
+
+
+bcrypt.hash(myPlaintextPassword, saltRounds, function(err, hash) {
+    // Store hash in your password DB.
+});
 
 ____________________________________________
 
