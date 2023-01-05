@@ -441,3 +441,16 @@ require('dotenv').config()
 console.log(process.env) // remove this after you've confirmed it is working
 
 
+
+.env file has to be in the root folder!
+naming has to be .env !
+
+
+Syntax Rules:
+
+NAME=VALUE
+SECRET=ThisIsOurSecret
+API_KEY=jdiuwjwnduidnwoqidnqidno
+
+
+
