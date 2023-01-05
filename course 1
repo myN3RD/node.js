@@ -426,3 +426,18 @@ npm install passport-google-oauth20
 npm install mongoose-findorcreate
 
 3. npm install passport
+
+
+____________________________________________
+
+
+      dotenv  .ENV
+      
+- for NOT showing sensitive/privat data like API or encryption keys
+
+npm install dotenv --save
+
+require('dotenv').config()
+console.log(process.env) // remove this after you've confirmed it is working
+
+
