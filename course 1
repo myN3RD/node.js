@@ -167,7 +167,14 @@ ____________________________________________
 
 
       ROUTING ------ HOW TO CONNECT HTML File with another File     lecture 234 // or 70 max
+      
+app.js:
 
+app.get('/index', function(req, res) {
+  res.sendFile(path.join(__dirname, '../', 'views', 'index.html'))}); 
+  
+
+ROUTES FOLDER:
 const path = require('path');   ****** WITH THIS LINE
 const express = require('express');         // for  the export to app.js file
 
