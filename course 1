@@ -170,13 +170,29 @@ ____________________________________________
       
 app.js:
 
+
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
+});
+
+
+
+  
+
+with ROUTES FOLDER:
+
+app.js file:
+
+const path = require('path');   ****** WITH THIS LINE
+const express = require('express');         // for  the export to app.js file
+
+
 app.get('/index', function(req, res) {
   res.sendFile(path.join(__dirname, '../', 'views', 'index.html'))}); 
   
-
-ROUTES FOLDER:
-const path = require('path');   ****** WITH THIS LINE
-const express = require('express');         // for  the export to app.js file
+  
+  
+route file:
 
 const router = express.Router();            // for  the export to app.js file
 
@@ -403,7 +419,7 @@ ____________________________________________
 
 
       WEBSOCKETS      FAB -> https://socket.io/docs/v4/client-installation/
-                             https://socket.io/get-started/chat ?
+                      perfect guide -> https://socket.io/get-started/chat 
       
 - we PUSH data from the server to -> the client
 - socket.IO is recommended
