@@ -357,6 +357,8 @@ ____________________________________________
       SENDING E-MAIL <how to>
 
 we have to use a third party service (Mail Service)
+- like https://api.sender.net/
+
 - npm install --save nodemailer
 - npm install --save nodemailer nodemailer-sendgrid-transport
 
