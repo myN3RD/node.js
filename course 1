@@ -254,8 +254,20 @@ html file:
  
 
 app.js:
- // querySelector looks inside the whole document for a h1 in this case
+
+// querySelector looks inside the whole document for a single item (element, class or id), h1 in this case
 document.querySelector('h1').innerHTML = 'Good bye'; // works
+
+// getElementsByClassName goes throw the whole document and looks for the elementS with a particular class
+document.getElementsByClassName('item')[0].innerHTML = 'good';  // its Elements so an array!
+
+// const container = document.getElementById('container');
+document.getElementById('container').innerHTML = 'Tschau';
+
+// getElementsByTagName goes throw the whole document and looks for the elementS with a particular tag
+document.getElementsByTagName('li')[1].innerHTML = 'ok';    // its Elements so an array!
+
+
 
 
 ____________________________________________
