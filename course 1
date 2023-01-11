@@ -247,6 +247,20 @@ const date = require(__dirname + '/date.js');
 ____________________________________________
 
 
+      DOM
+
+html file:
+<script src="script.js"></script>   <!-- this has to be at the end of the file, because the body tags have to be readed first -->
+ 
+
+app.js:
+ // querySelector looks inside the whole document for a h1 in this case
+document.querySelector('h1').innerHTML = 'Good bye'; // works
+
+
+____________________________________________
+
+
       STATUSCODES
 
 200 Success
