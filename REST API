@@ -2,6 +2,14 @@ Re presentational S tate T ransfer
 
 REST is a "architectural Style" for designing APIs, like defferent buildings which has defferent architectural styles
 
+other API Styles are:
+
+GraphQL
+FALCOR
+etc.
+
+- the Goldstandard for Web APIs is REST!
+
 - we transfer DATA instead of User Interfaces from someone elses server to our server
 - a different kind of response is needed
 - we dont call  render  like  res.render, cause APIs not render views -> they don return html files. And a rendered view is an html file 
@@ -35,12 +43,19 @@ HTML, Plain Text, XML, JSON
                           |  "API Endpoints"   |
                           |____________________| 
                            
-        HTTP Methods
+                           
+        HTTP Methods (Verbs)
    
   GET (request) to get a resource or data from the server
       the response is giving us the resoure or data back to the client.
       
   POST (request) Post a resource from the client to the server -> Thats what we use actually everytime
+  
+  PUT is updating data in the database -> the entire entry with the sepific element inside will be replaced  { user: , email: password: }
+  
+  PATCH is updating data in the database -> the sepific element inside the entry will be replaced  { user: , email: password: } -> just the email 
+  
+  DELETE
  
   
   
