@@ -1,5 +1,7 @@
 Re presentational S tate T ransfer
 
+REST is a "architectural Style" for designing APIs, like defferent buildings which has defferent architectural styles
+
 - we transfer DATA instead of User Interfaces from someone elses server to our server
 - a different kind of response is needed
 - we dont call  render  like  res.render, cause APIs not render views -> they don return html files. And a rendered view is an html file 
