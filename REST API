@@ -68,4 +68,71 @@ Clearly defined API Endpoints                 Topic: Authentication
 will clearly difined request +      Server and Client dont store any connection history
 response data structure             , every request is handled seperately
   
+  
+  
+  
+
+
+REST API METHODS examples
+  
+  
+// fetching all articles
+app.get('/articles', function(req, res) {
+    Article.find(function(err, foundArticles) {
+        if (!err) {
+            console.log(foundArticles);
+            res.send(foundArticles);
+        } else {
+            console.log(err);
+            res.send(err);
+        };
+    });
+});
+
+
+// we have to use POSTMAN when we have NO frontend, to post something to the db!!!
+app.post('/articles', function(req, res) {
+    // console.log(req.body.title);     // for testing console.log
+    // console.log(req.body.content);
+
+    const newArticle = new Article({
+        title: req.body.title,
+        content: req.body.content
+    });
+    newArticle.save(function(err, foundArticles) {
+        if (!err) {
+            console.log('Successfully POST request');
+            res.send('Successfully POST request');
+        } else {
+            console.log(err);
+            res.send(err);
+        };
+    });
+});
+
+
+// delete ALL
+app.delete('/articles', function(req, res) {
+    Article.deleteMany(function(err) {
+        if (!err) {
+            res.send('Deleted all Articles');
+        } else {
+            res.send(err);
+        };
+    });
+});
+
+
+// get a specific article
+app.get('/articles/:articleTitle', function(req, res) {
+
+    Article.findOne({title: req.params.articleTitle}, function(err, foundArticle){
+        if (foundArticle) {
+            res.send(foundArticle);
+        } else {
+            res.send('No such Title found');
+        }
+    });
+});
+
 
