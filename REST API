@@ -51,7 +51,7 @@ HTML, Plain Text, XML, JSON
       
   POST (request) Post a resource from the client to the server -> Thats what we use actually everytime
   
-  PUT is updating data in the database -> the entire entry with the sepific element inside will be replaced  { user: , email: password: }
+  PUT (request) is updating data in the database -> the entire entry with the sepific element inside will be replaced  { user: , email: password: }
   
   PATCH is updating data in the database -> the sepific element inside the entry will be replaced  { user: , email: password: } -> just the email 
   
@@ -133,6 +133,23 @@ app.get('/articles/:articleTitle', function(req, res) {
             res.send('No such Title found');
         }
     });
+});
+
+
+// put request
+app.put('/articles/:articleTitle', function(req, res) { 
+    Article.replaceOne(                  // If you use `overwrite: true`, you should use `replaceOne()` instead:
+        {title: req.params.articleTitle},
+        {title: req.body.title, 
+       content: req.body.content},
+        {overwrite: true},
+        function(err) {
+            if (!err) {
+                res.send('Successfully updated article');
+            } else {
+                console.log(err);
+            };
+        });
 });
 
 
