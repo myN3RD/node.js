@@ -153,3 +153,18 @@ app.put('/articles/:articleTitle', function(req, res) {
 });
 
 
+// patch request    // in POSTMAN we can chooese now what we want to update
+app.patch('/articles/:articleTitle', function(req, res) { 
+    Article.updateMany(                 
+        {title: req.params.articleTitle},
+        {$set: req.body},
+        function(err) {
+            if (!err) {
+                res.send('Successfully patched article');
+            } else {
+                console.log(err);
+            };
+        });
+});
+
+
