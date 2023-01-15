@@ -74,6 +74,9 @@ response data structure             , every request is handled seperately
 
 
 REST API METHODS examples
+
+
+we have to use POSTMAN when we hhave no frontend!!!
   
   
 // fetching all articles
@@ -153,14 +156,28 @@ app.put('/articles/:articleTitle', function(req, res) {
 });
 
 
-// patch request    // in POSTMAN we can chooese now what we want to update
+// patch request    // in POSTMAN we can choose now, which part what we want to update
 app.patch('/articles/:articleTitle', function(req, res) { 
     Article.updateMany(                 
         {title: req.params.articleTitle},
         {$set: req.body},
         function(err) {
             if (!err) {
-                res.send('Successfully patched article');
+                res.send('Successfully patched part of the article');
+            } else {
+                console.log(err);
+            };
+        });
+});
+
+
+// delete request    // in POSTMAN we can choose now whcih article we want to delete
+app.delete('/articles/:articleTitle', function(req, res) { 
+    Article.deleteOne(                 
+        {title: req.params.articleTitle},
+        function(err) {
+            if (!err) {
+                res.send('Successfully delete part of article');
             } else {
                 console.log(err);
             };
