@@ -286,6 +286,12 @@ NPM (Package Manager)
 Zum installieren ->
 Befehl: npm install name
 
+
+// 404 
+appExpress.use((req, res, next) => {
+    res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
+});
+
 ____________________________________________
 
 
