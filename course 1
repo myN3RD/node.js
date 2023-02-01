@@ -109,6 +109,11 @@ ____________________________________________
 
 
       REQUESTS
+      
+      https://www.twilio.com/blog/2017/08/http-requests-in-node-js.html
+      
+  const https = require('https');
+    
 
 req       means request  (Client)Frontend is sending a request to the (Server)Backend
 
