@@ -342,7 +342,13 @@ EJS
 
                    1. npm install ejs
                     
-                   2. ADD to app.js file!:    app.use('view engine', 'ejs');
+                   2. ADD to app.js file!:    
+                   
+                   app.set('view engine', 'ejs');     (set -> no err)
+                   app.use('view engine', 'ejs');     (what is use doing instead of set?)
+
+
+
 
 syntax: <% %>     with this we can use javascripot in a html file. EVERY line which is NOT html, must be embedded with <% .... %> 
 
