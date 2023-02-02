@@ -122,7 +122,7 @@ req       means request  (Client)Frontend is sending a request to the (Server)Ba
 EXAMPLE....
 
 
-Type: (of requests)
+Type: (of requests)     http verbs
 
 use       for handle any method
 get       get request to a certain url                                  get a resource from the server
@@ -135,6 +135,22 @@ delete    delete a resource on the server
       271
 get 
 post
+
+
+
+
+  ASYNCH Requests
+
+normal requests do redirect or create? a new html page
+
+asynch does is behind the scenes just in the backend! (for deleting an item for example)
+
+works with JSON data (mostly)
+
+ 
+
+
+
 
 __________________________________________
 
