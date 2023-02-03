@@ -210,11 +210,11 @@ const path = require('path');   ****** WITH THIS LINE
 
 
 app.get('/', function(req, res) {
-  res.sendFile('index.html');                                                           RELATIVE PATH   (This will only look in the current folder)
+  res.sendFile('index.html');                                                  RELATIVE PATH   (This will only look in the current directory/folder)
 
 
 app.get('/index', function(req, res) {
-  res.sendFile(path.join(__dirname, '../', 'views', 'index.html'))});                   This will give us the file whereever it is               
+  res.sendFile(path.join(__dirname, '../', 'views', 'index.html'))});          This will give us the file whereever it is               
   
   
   
