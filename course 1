@@ -202,14 +202,19 @@ app.get('/', (req, res) => {
 
 with ROUTES FOLDER:
 
-app.js file:
+app.js file:                    we use PATH now when we are routing
+
 
 const path = require('path');   ****** WITH THIS LINE
-const express = require('express');         // for  the export to app.js file
+
+
+
+app.get('/', function(req, res) {
+  res.sendFile('index.html');                                                           RELATIVE PATH   (This will only look in the current folder)
 
 
 app.get('/index', function(req, res) {
-  res.sendFile(path.join(__dirname, '../', 'views', 'index.html'))}); 
+  res.sendFile(path.join(__dirname, '../', 'views', 'index.html'))});                   This will give us the file whereever it is               
   
   
   
