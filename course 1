@@ -14,9 +14,10 @@ NODE.JS                                                                         
 require KEYWORD -> to import files 
                 -> or npm packages
 
-______________________________________________
 
-      SETUP VSCode
+  
+              VSCode SETUP
+______________________________________________
 
 1. (run in terminal) npm init -> to get the package.json (file) => file includes all the packages which have installed in node
 
@@ -37,10 +38,11 @@ adding at the package json file to -> "scripts": {
 
 optional                 npm install --save mongodb
 
+
+
+
+             CREATING A NEW SERVER
 ______________________________________________
-
-
-      CREATING A NEW SERVER
 
 adding a file -> app.js => its the route file to start a server with node.js
 
@@ -56,11 +58,12 @@ server.listen(3000);                                   // looping process (Event
 
 // *** THATS ALL WE NEED TO CREATE A NEW SERVER ***
 
+
+
+
+               IMAGES / FOLDER IMPORT
 ______________________________________________
 
-
-      IMAGES / FOLDER IMPORT
-      
 Examples:
 
 
@@ -69,17 +72,21 @@ appExpress.use(express.static(path.join(__dirname, 'views'))); // makes it like 
 appExpress.use(express.static(path.join(__dirname, 'images'))); // makes it like if we are already in this folder
 
 
+
+
+
+                VARIABLES
 ____________________________________________
-
-
-      VARIABLES
 
 Ways to declare a Variable:
 
 let     can be reassigned in the future
 const   can not be reassigned, Is a Constant
-____________________________________________
 
+
+
+                MODULES
+____________________________________________
 
 A Package is also called as a MODULE
 localhost:  makes my own ip adress behave like a remote web server
@@ -93,9 +100,11 @@ if (url === '/');    die drei = bedeuten: if ist nur true, wenn die url is an st
 
 Events, Event Loop:
 
-____________________________________________
 
-      FUNCTION
+
+
+              FUNCTIONS
+____________________________________________
 
 Callback Function: Will be called when 'exit' in this case is done. 
 
@@ -105,12 +114,14 @@ EXAMPLE: process.on('exit', function() {
 })                            CALLBACK
 
 
+
+
+
+              REQUESTS
 ____________________________________________
 
-
-      REQUESTS
+https://www.twilio.com/blog/2017/08/http-requests-in-node-js.html
       
-      https://www.twilio.com/blog/2017/08/http-requests-in-node-js.html
       
   const https = require('https');
     
@@ -142,23 +153,33 @@ SUBMIT BUTTON -> is trigering a POST request
 
 
 
-  ASYNCH Requests
+              ASYNC Requests OPTIONAL -> then and catch is doing the same
+____________________________________________
 
 normal requests do redirect or create? a new html page
 
-asynch does is behind the scenes just in the backend! (for deleting an item for example)
+async does it behind the scenes just in the backend! (for deleting an item for example)
 
 works with JSON data (mostly)
 
- 
+
+
+async in front of a function
+
+let test = async (req, res) => {
+const example = await ....;
+};
 
 
 
+"Top Level await"
 
+could also be used outside of a function
+
+
+
+                RESPONSES
 __________________________________________
-
-
-      RESPONSES
 
 res       means response  (Server)Backend (is now saving the data to a Database ) and after, is sending a response to the (Client)Frontend
 
@@ -187,11 +208,13 @@ export    allows that a MODUL can be used in another file
 exports
 import    allows a file to consume a MODUL (which is exported)
 
+
+
+
+
+                  ROUTING ------ HOW TO CONNECT HTML File with another File     lecture 234 // or 70 max
 ____________________________________________
 
-
-      ROUTING ------ HOW TO CONNECT HTML File with another File     lecture 234 // or 70 max
-      
 app.js:
 
 
@@ -203,7 +226,7 @@ app.get('/', (req, res) => {
 
   
 
-with ROUTES FOLDER:
+                  with ROUTES FOLDER:
 
 app.js file:                    we use PATH now when we are routing
 
@@ -273,10 +296,11 @@ and than requirering the FILE in the app.js file ->
 const date = require(__dirname + '/date.js');     
 
 
+
+
+
+                    DOM
 ____________________________________________
-
-
-      DOM
 
 html file:
 <script src="script.js"></script>   <!-- this has to be at the end of the file, because the body tags have to be readed first -->
@@ -299,10 +323,9 @@ document.getElementsByTagName('li')[1].innerHTML = 'ok';    // its Elements so a
 
 
 
+
+                  STATUSCODES
 ____________________________________________
-
-
-      STATUSCODES
 
 200 Success
 4** Client Error
@@ -321,11 +344,12 @@ appExpress.use((req, res, next) => {
     res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
 });
 
+
+
+
+                TYPES OF ERRORS
 ____________________________________________
 
-
-      TYPES OF ERRORS
-      
 Syntax Errors = Typos
 Runtime Erros / hat wohl nich nanderen Namen
 Logical Errors            (werden nicht angezeigt) ---> findet man ggf. mit dem "debugger"
@@ -333,11 +357,12 @@ Logical Errors            (werden nicht angezeigt) ---> findet man ggf. mit dem 
 CORS Error (Lektion 366) -> solving only on our?? server
 
 
+
+
+
+      FOR   DYNAMIC   OR REALTIME CONTENT / FEATURES IN THE FRONTEND ---> we use --->  TEMPLATING ENGINES
 ____________________________________________
 
-
-      FOR       DYNAMIC       OR REALTIME CONTENT / FEATURES IN THE FRONTEND ---> we use --->  TEMPLATING ENGINES
-      
       or View Engine. Thats why we need in this case when we are using EJS for example, we need a Views folder!
 
 
@@ -394,11 +419,12 @@ DYNAMIC CONTENT
 <p> <%= post.content %> </p>            
 <% }); %>
 
+
+
+
+                MVC   / DESIGN PATTERN  kind of Important
 ____________________________________________
 
-
-      MVC   / DESIGN PATTERN  kind of Important
-      
 -Model View Controller-
 
 
@@ -408,20 +434,24 @@ Models Views Controllers
 
 = Seperation of Concerns
 
-____________________________________________
 
 
-      APIs  (Webserver) Application Programming Interface
-      
+
+
+
+               APIs  (Webserver) Application Programming Interface
+____________________________________________      
 
 REST      |       GraphQL..
 
 Types of Requests that the Backend allows -> calls API
 .
 
-____________________________________________
+
+
 
       SENDING E-MAIL <how to>
+____________________________________________
 
 we have to use a third party service (Mail Service)
 - like https://api.sender.net/
@@ -429,17 +459,21 @@ we have to use a third party service (Mail Service)
 - npm install --save nodemailer
 - npm install --save nodemailer nodemailer-sendgrid-transport
 
+
+
+
+
+            COOKIES     HOW TO SETUP COOKIES
 ____________________________________________
-
-
-      COOKIES     HOW TO SETUP COOKIES
 
   res.setHeader('Set-Cookie', 'loggedIn=true');
   
-____________________________________________
+  
+  
 
   
-      SESSIONS        npm install --save express-session
+           SESSIONS        npm install --save express-session
+____________________________________________
 
 - is only for one user
 - Cookies are on the client side
@@ -447,10 +481,11 @@ ____________________________________________
 
 How to use sessions with mongodb        npm install --save connect-mongodb-session
 
+
+
+
+            PASSWORD ENCRYPTION
 ____________________________________________
-
-
-      PASSWORD ENCRYPTION
 
 npm install bcryt
 
@@ -471,10 +506,12 @@ To check a password:
 bcrypt.compare(myPlaintextPassword, hash, function(err, result) {
     // result == true
 });
+
+
+
+
+            CSRF PROTECTION
 ____________________________________________
-
-
-      CSRF PROTECTION
 
 - npm install --save csurf
 
@@ -484,12 +521,13 @@ ____________________________________________
 The flash is a special area of the session used for storing messages. Messages are written to the flash and cleared after being displayed to the user. 
 
 
+
+
+
+            WEBSOCKETS      FAB -> https://socket.io/docs/v4/client-installation/
+                            perfect guide -> https://socket.io/get-started/chat 
 ____________________________________________
 
-
-      WEBSOCKETS      FAB -> https://socket.io/docs/v4/client-installation/
-                      perfect guide -> https://socket.io/get-started/chat 
-      
 - we PUSH data from the server to -> the client
 - socket.IO is recommended
 
@@ -510,20 +548,23 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
 
+
+
+
+
+               LODASH          https://lodash.com
 ____________________________________________
 
-
-
-      LODASH          https://lodash.com
-      
 npm i --save lodash
 
 const _ = require('lodash');
 
+
+
+
+
+                 OAUTH
 ____________________________________________
-
-
-      OAUTH
 
 https://www.passportjs.org/packages/passport-google-oauth20/
 
@@ -535,11 +576,13 @@ npm install mongoose-findorcreate
 3. npm install passport
 
 
+
+
+
+
+                  dotenv  .ENV
 ____________________________________________
 
-
-      dotenv  .ENV
-      
 - for NOT showing sensitive/privat data like API or encryption keys
 
 npm install dotenv --save
