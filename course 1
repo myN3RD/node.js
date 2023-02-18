@@ -19,9 +19,9 @@ require KEYWORD -> to import files
               VSCode SETUP
 ______________________________________________
 
-1. (run in terminal) npm init -> to get the package.json (file) => file includes all the packages which have installed in node
+1. (run in terminal) npm init -> to get the package.json (file) => file includes all the packages (dependencies) which have installed in node
 
-2. npm install --save express 
+2. npm install --save express   -> its creating the node modules folder
 
 3. npm install nodemon --save-dev
 
