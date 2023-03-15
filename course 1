@@ -302,6 +302,12 @@ const date = require(__dirname + '/date.js');
                     DOM
 ____________________________________________
 
+
+the dom is created -> by the code and creates a tree structure (the DOM)
+
+which has parents and children and so one
+
+
 html file:
 <script src="script.js"></script>   <!-- this has to be at the end of the file, because the body tags have to be readed first -->
  
