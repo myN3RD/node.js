@@ -11,11 +11,29 @@ etc.
 - the Goldstandard for Web APIs is REST!
 
 
+
+
+
             FAKE REST API for development
-___________________________________________________
+            _____________________________
 
 https://jsonplaceholder.typicode.com/
 
+
+HOW TO FETCH JSON DATA IN JS:
+_____________________________
+
+<script>
+  fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson')
+    .then(res => {
+      return res.json();
+    })
+    .then(data => {
+      console.log(data);
+      console.log(data.features);
+    })
+    .catch(err => console.log(err));
+</script>
 
 
 
@@ -55,7 +73,10 @@ HTML, Plain Text, XML, JSON
                           |____________________| 
                            
                            
-        HTTP Methods (Verbs)
+                           
+            HTTP Methods (Verbs)
+            ____________________
+            
    
   GET (request) to get a resource or data from the server
       the response is giving us the resoure or data back to the client.
@@ -71,7 +92,9 @@ HTML, Plain Text, XML, JSON
   
   
   
-        REST Principles
+             REST Principles
+             _______________
+             
   
 Uniform Interface                   Stateless Interaction
 
