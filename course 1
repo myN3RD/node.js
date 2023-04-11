@@ -73,18 +73,6 @@ appExpress.use(express.static(path.join(__dirname, 'images'))); // makes it like
 
 
 
-
-
-                VARIABLES
-____________________________________________
-
-Ways to declare a Variable:
-
-let     can be reassigned in the future
-const   can not be reassigned, Is a Constant
-
-
-
                 MODULES
 ____________________________________________
 
@@ -353,10 +341,11 @@ appExpress.use((req, res, next) => {
 
 
 
-                TYPES OF ERRORS
-____________________________________________
+          TYPES OF ERRORS
+          _______________
 
-Syntax Errors = Typos
+
+Syntax Errors = Typos (something is wrong with our code) 
 Runtime Erros / hat wohl nich nanderen Namen
 Logical Errors            (werden nicht angezeigt) ---> findet man ggf. mit dem "debugger"
 
