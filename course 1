@@ -304,6 +304,18 @@ const date = require(__dirname + '/date.js');
 
 the dom is created -> by the code and creates a tree structure (the DOM)
 
+document is the highest rank in the tree structure -> serves as a entry point to the DOM
+
+
+
+            DOCUMENT
+               |
+              HTML     (first child)
+            |     |
+           HEAD  BODY  (two childs)
+           ..........
+            
+
 which has parents and children and so one
 
 - allows javascript to access html elements and style to manipulate them
