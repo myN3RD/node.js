@@ -298,8 +298,8 @@ const date = require(__dirname + '/date.js');
 
 
 
-                    DOM
-____________________________________________
+          DOM (Manipulation)
+          __________________
 
 
 the dom is created -> by the code and creates a tree structure (the DOM)
@@ -329,8 +329,9 @@ document.getElementsByTagName('li')[1].innerHTML = 'ok';    // its Elements so a
 
 
 
-                  STATUSCODES
-____________________________________________
+          STATUSCODES
+          ___________
+
 
 200 Success
 4** Client Error
