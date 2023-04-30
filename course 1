@@ -15,7 +15,15 @@ require KEYWORD -> to import files
                 -> or npm packages
 
 
-  
+LIVE SERVER START
+_________________
+
+
+in terminal: 
+live-server
+
+
+
   
           VSCode SETUP
           ____________
