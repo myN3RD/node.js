@@ -444,10 +444,11 @@ DYNAMIC CONTENT
 
 
 
-                MVC   / DESIGN PATTERN  kind of Important
-____________________________________________
+          MVC   / DESIGN PATTERN  kind of Important
+          ______________________
 
--Model View Controller-
+
+- Model View Controller-
 
 
                Routes
@@ -461,8 +462,9 @@ Models Views Controllers
 
 
 
-               APIs  (Webserver) Application Programming Interface
-____________________________________________      
+          APIs  (Webserver) Application Programming Interface
+          _________________
+          
 
 REST      |       GraphQL..
 
@@ -472,8 +474,9 @@ Types of Requests that the Backend allows -> calls API
 
 
 
-      SENDING E-MAIL <how to>
-____________________________________________
+          SENDING E-MAIL <how to>
+          _______________________
+
 
 we have to use a third party service (Mail Service)
 - like https://api.sender.net/
