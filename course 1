@@ -177,8 +177,11 @@ could also be used outside of a function
 
 
 
-                RESPONSES
-__________________________________________
+
+
+          RESPONSES
+          _________
+
 
 res       means response  (Server)Backend (is now saving the data to a Database ) and after, is sending a response to the (Client)Frontend
 
@@ -211,8 +214,9 @@ import    allows a file to consume a MODUL (which is exported)
 
 
 
-                  ROUTING ------ HOW TO CONNECT HTML File with another File     lecture 234 // or 70 max
-____________________________________________
+          ROUTING -> HOW TO CONNECT HTML FILE with another File     lecture 234 // or 70 max
+          ___________________________________
+
 
 app.js:
 
@@ -302,9 +306,9 @@ const date = require(__dirname + '/date.js');
           __________________
 
 
-the dom is created -> by the code and creates a tree structure (the DOM)
+- the dom is created -> by the code and creates a tree structure (the DOM)
 
-document is the highest rank in the tree structure -> serves as a entry point to the DOM
+- document is the highest rank in the tree structure -> serves as a entry point to the DOM
 
 
 
@@ -318,7 +322,7 @@ document is the highest rank in the tree structure -> serves as a entry point to
 
 which has parents and children and so one
 
-- allows javascript to access html elements and style to manipulate them
+- allows javascript to access html elements and css style to manipulate them
 
 
 
