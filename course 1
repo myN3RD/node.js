@@ -572,8 +572,8 @@ How to use sessions with mongodb        npm install --save connect-mongodb-sessi
 
 
 
-            PASSWORD ENCRYPTION
-____________________________________________
+          PASSWORD ENCRYPTION
+          ___________________
 
 npm install bcryt
 
@@ -598,8 +598,8 @@ bcrypt.compare(myPlaintextPassword, hash, function(err, result) {
 
 
 
-            CSRF PROTECTION
-____________________________________________
+          CSRF PROTECTION
+          _______________
 
 - npm install --save csurf
 
@@ -612,9 +612,9 @@ The flash is a special area of the session used for storing messages. Messages a
 
 
 
-            WEBSOCKETS      FAB -> https://socket.io/docs/v4/client-installation/
-                            perfect guide -> https://socket.io/get-started/chat 
-____________________________________________
+          WEBSOCKETS      FAB -> https://socket.io/docs/v4/client-installation/
+                          perfect guide -> https://socket.io/get-started/chat 
+          __________
 
 - we PUSH data from the server to -> the client
 - socket.IO is recommended
@@ -639,9 +639,11 @@ app.get('/', (req, res) => {
 
 
 
+          LODASH          
+          ______
 
-               LODASH          https://lodash.com
-____________________________________________
+https://lodash.com
+
 
 npm i --save lodash
 
@@ -650,9 +652,8 @@ const _ = require('lodash');
 
 
 
-
-                 OAUTH
-____________________________________________
+          OAUTH
+          _____
 
 https://www.passportjs.org/packages/passport-google-oauth20/
 
@@ -666,10 +667,8 @@ npm install mongoose-findorcreate
 
 
 
-
-
-                  dotenv  .ENV
-____________________________________________
+          dotenv  .ENV
+          _____________
 
 - for NOT showing sensitive/privat data like API or encryption keys or mongoDB login data etc.
 
@@ -677,12 +676,13 @@ npm install dotenv --save
 
 app.js:
 
-require("dotenv");
 require('dotenv').config()
 
-console.log(process.env) // remove this after you've confirmed it is working
+console.log(process.env) // remove this after you've confirmed everything is working
 
 
+CONFIGURATION:
+______________
 
 .env file has to be in the root folder!
 naming has to be .env !
