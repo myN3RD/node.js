@@ -15,12 +15,19 @@ require KEYWORD -> to import files
                 -> or npm packages
 
 
+
+const fs = require("fs"); // = filesystem package core module
+random -> for creating the message.txt file
+fs.writeFileSync("message.txt", "DUMMY");
+
+
+
+
 LIVE SERVER START
 _________________
 
-
-in terminal: 
-live-server
+terminal command: 
+-> live-server
 
 
 
