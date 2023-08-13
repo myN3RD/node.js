@@ -164,8 +164,8 @@ EXAMPLE: process.on('exit', function() {
 
 
 
-              REQUESTS
-____________________________________________
+          REQUESTS
+          ________
 
 https://www.twilio.com/blog/2017/08/http-requests-in-node-js.html
       
@@ -173,7 +173,7 @@ https://www.twilio.com/blog/2017/08/http-requests-in-node-js.html
   const https = require('https');
     
 
-req       means request  (Client)Frontend is sending a request to the (Server)Backend
+req  means request  (Client)Frontend is sending a request to the (Server) Backend
 
 - requests will be included in html and css and ... (Frontend)files
 
@@ -195,13 +195,13 @@ get
 post
 
 
-SUBMIT BUTTON -> is trigering a POST request
+SUBMIT BUTTON -> is trigering a POST request (by default???)
 
 
 
 
-              ASYNC Requests OPTIONAL -> then and catch is doing the same
-____________________________________________
+          ASYNC Requests OPTIONAL -> then and catch is doing the same
+          _______________________
 
 normal requests do redirect or create? a new html page
 
@@ -230,8 +230,7 @@ could also be used outside of a function
           RESPONSES
           _________
 
-
-res       means response  (Server)Backend (is now saving the data to a Database ) and after, is sending a response to the (Client)Frontend
+res  means response  (Server)Backend (is now saving the data to a Database ) and after, is sending a response to the (Client)Frontend
 
           Its called a Request-Response Cycle
           
@@ -261,10 +260,10 @@ import    allows a file to consume a MODUL (which is exported)
 
 
 
+          ROUTING
+          _______
 
-          ROUTING -> HOW TO CONNECT HTML FILE with another File     lecture 234 // or 70 max
-          ___________________________________
-
+-> HOW TO CONNECT HTML FILE with another File     lecture 234 // or 70 max
 
 app.js:
 
@@ -277,9 +276,12 @@ app.get('/', (req, res) => {
 
   
 
-                  with ROUTES FOLDER:
+with ROUTES FOLDER
+__________________
 
-app.js file:                    we use PATH now when we are routing
+app.js file:                   
+
+-> we use PATH now when we are routing
 
 
 const path = require('path');   ****** WITH THIS LINE
