@@ -37,7 +37,10 @@ live-server
 
 adding at the package json file to -> "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"                                  // this line that the app will execute automaticly -> after nodemon installation
+    "start": "nodemon app.js"                                  // this line that the app will execute automaticly after making changes
+
+
+3.2 Termin Command: npm start -> nodemon is now running
               
 
 
