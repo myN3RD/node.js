@@ -31,7 +31,7 @@ live-server
 
 1. (run in terminal) npm init -> to get the package.json (file) => file includes all the packages (dependencies) which have installed in node
 
-2. npm install --save express   -> its creating the node modules folder
+2. npm install --save express   -> its creating the node modules folder -> express is all about middlewares
 
 3. npm install nodemon --save-dev
 
@@ -40,7 +40,9 @@ adding at the package json file to -> "scripts": {
     "start": "nodemon app.js"                                  // this line that the app will execute automaticly after making changes
 
 
-3.2 Termin Command: npm start -> nodemon is now running
+3.2 Terminal Command: 
+
+   npm start -> nodemon is now running
               
 
 
@@ -50,6 +52,24 @@ adding at the package json file to -> "scripts": {
 
 
 optional                 npm install --save mongodb
+
+
+
+
+          MIDDLEWARE
+          __________
+SYNTAX:
+app.use((req, res, next) => {};   // next just if we use multiple middlewares
+
+
+app.use((req, res, next) => {   // .use allows us to add a middleware function
+  console.log("In the middleware");
+  next(); // next allows us to travel to the next middleware
+});
+
+app.use((req, res, next) => {
+  console.log("Another middleware");
+});
 
 
 
@@ -250,12 +270,14 @@ app.get('/index', function(req, res) {
   
   
   
-route file:
+route file: (nested inside the Routes folder)
+
+const express = require('express'); ??? line neccessary?
 
 const router = express.Router();            // for  the export to app.js file
 
 router.use('/', (req, res, next) => {   // we have to use the name router in the front
-    res.sendFile(path.join(__dirname, '../', 'views', 'page.html'));  **** WITH THIS LINE AS WELL // !!! sendFile !!! to connect with the html file
+    res.sendFile(path.join(__dirname, '../', 'views', 'page.html')); // **** WITH THIS LINE AS WELL // !!! sendFile !!! to connect with the html file
 });
 
 module.exports = router;                    // for  the export to app.js file
