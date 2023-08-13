@@ -671,11 +671,15 @@ npm install mongoose-findorcreate
                   dotenv  .ENV
 ____________________________________________
 
-- for NOT showing sensitive/privat data like API or encryption keys
+- for NOT showing sensitive/privat data like API or encryption keys or mongoDB login data etc.
 
 npm install dotenv --save
 
+app.js:
+
+require("dotenv");
 require('dotenv').config()
+
 console.log(process.env) // remove this after you've confirmed it is working
 
 
@@ -684,7 +688,7 @@ console.log(process.env) // remove this after you've confirmed it is working
 naming has to be .env !
 
 
-Syntax Rules:
+SYNTAX RULES: we have key value pairs (no "" needed)
 
 NAME=VALUE
 SECRET=ThisIsOurSecret
