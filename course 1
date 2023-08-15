@@ -1,11 +1,11 @@
 NODE.JS                                                                                                                                     START 20.10.22
 
-- Express is a Framework for Node.js
+- Express is a (http) Framework for (running) Node.js (servers)
 - is an Backend Framework
 - for Server Side Applications
 - is an API
 - JS RUNTIME -> allows to run javascript on a server
-- package.json => file includes all the packages which have installed in node
+- package.json => the file includes all the packages which have installed in node (= dependencies)
 
 1. Datei speichern                                                                           SAVE
 2. Server starten (zb. im Terminal mit den Befehl -> node app.js                             EXECUTE
