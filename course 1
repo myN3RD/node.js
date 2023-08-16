@@ -35,7 +35,6 @@ terminal command:
           VSCode SETUP
           ____________
 
-
 1. (run in terminal) npm init -> to get the package.json (file) => file includes all the packages (dependencies) which have installed in node
 
 2. npm install --save express   -> its creating the node modules folder -> express is all about middlewares
@@ -85,8 +84,7 @@ app.use((req, res, next) => {
           CREATING A NEW SERVER
           _____________________
 
-
-create a file -> app.js => its the route file to start a server with node.js
+create a file -> app.js -> its the route file to start a server with node.js
 
 
 
@@ -139,8 +137,8 @@ appExpress.use(express.static(path.join(__dirname, 'images'))); // makes it like
 
 
 
-                MODULES
-____________________________________________
+          MODULES
+          _______
 
 A Package is also called as a MODULE
 localhost:  makes my own ip adress behave like a remote web server
@@ -157,16 +155,15 @@ Events, Event Loop:
 
 
 
-              FUNCTIONS
-____________________________________________
+          FUNCTIONS
+          _________
 
 Callback Function: Will be called when 'exit' in this case is done. 
 
 
 EXAMPLE: process.on('exit', function() {
                                  ↑
-})                            CALLBACK
-
+}):                           CALLBACK
 
 
 
@@ -229,7 +226,6 @@ const example = await ....;
 "Top Level await"
 
 could also be used outside of a function
-
 
 
 
@@ -410,7 +406,6 @@ document.getElementsByTagName('li')[1].innerHTML = 'ok';    // its Elements so a
           STATUSCODES
           ___________
 
-
 200 Success
 4** Client Error
 5** Server Error
@@ -434,10 +429,9 @@ appExpress.use((req, res, next) => {
           TYPES OF ERRORS
           _______________
 
-
 Syntax Errors = Typos (something is wrong with our code) 
-Runtime Erros / hat wohl nich nanderen Namen
-Logical Errors            (werden nicht angezeigt) ---> findet man ggf. mit dem "debugger"
+Runtime Erros / hat wohl noch anderen Namen
+Logical Errors -> (werden nicht angezeigt) -> findet man ggf. mit dem "debugger"
 
 CORS Error (Lektion 366) -> solving only on our?? server
 
@@ -445,8 +439,8 @@ CORS Error (Lektion 366) -> solving only on our?? server
 
 
 
-      FOR   DYNAMIC   OR REALTIME CONTENT / FEATURES IN THE FRONTEND ---> we use --->  TEMPLATING ENGINES
-____________________________________________
+          FOR   DYNAMIC   OR REALTIME CONTENT / FEATURES IN THE FRONTEND ---> we use --->  TEMPLATING ENGINES
+          ____________________________________________
 
       or View Engine. Thats why we need in this case when we are using EJS for example, we need a Views folder!
 
@@ -507,9 +501,8 @@ DYNAMIC CONTENT
 
 
 
-          MVC   / DESIGN PATTERN  kind of Important
-          ______________________
-
+          MVC / DESIGN PATTERN  kind of Important
+          ____________________
 
 - Model View Controller-
 
@@ -528,7 +521,6 @@ Models Views Controllers
           APIs  (Webserver) Application Programming Interface
           _________________
           
-
 REST      |       GraphQL..
 
 Types of Requests that the Backend allows -> calls API
@@ -540,7 +532,6 @@ Types of Requests that the Backend allows -> calls API
           SENDING E-MAIL <how to>
           _______________________
 
-
 we have to use a third party service (Mail Service)
 - like https://api.sender.net/
 
@@ -551,8 +542,8 @@ we have to use a third party service (Mail Service)
 
 
 
-            COOKIES     HOW TO SETUP COOKIES
-____________________________________________
+          COOKIES   HOW TO SETUP COOKIES
+          _______
 
   res.setHeader('Set-Cookie', 'loggedIn=true');
   
@@ -560,8 +551,10 @@ ____________________________________________
   
 
   
-           SESSIONS        npm install --save express-session
-____________________________________________
+           SESSIONS       
+          _________
+
+ npm install --save express-session
 
 - is only for one user
 - Cookies are on the client side
@@ -611,10 +604,12 @@ The flash is a special area of the session used for storing messages. Messages a
 
 
 
-
-          WEBSOCKETS      FAB -> https://socket.io/docs/v4/client-installation/
-                          perfect guide -> https://socket.io/get-started/chat 
+          WEBSOCKETS     
           __________
+
+FAB -> https://socket.io/docs/v4/client-installation/
+perfect guide -> https://socket.io/get-started/chat 
+
 
 - we PUSH data from the server to -> the client
 - socket.IO is recommended
