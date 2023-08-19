@@ -83,7 +83,29 @@ app.use((req, res, next) => {
 writing-error-handlers
 ______________________
 
+AKA  SETUP CUSTOM ERROR HANDLER IN EXPRESS
+
 https://expressjs.com/en/guide/error-handling.html#writing-error-handlers
+
+
+MIDDLEWARE FOULDER:
+error-handler.js:
+
+const errorHandlerMiddleware = function (err, req, res, next) {
+  // return res.status(500).json({ msg: err }); // own preferences
+  return res.status(500).json({ msg: `Something went wrong` });
+};
+
+module.exports = errorHandlerMiddleware;
+
+
+
+app.js:
+
+const errorHandlerMiddleware = require("./middleware/error-handler");
+
+// routes
+app.use(errorHandlerMiddleware)
 
 
 
