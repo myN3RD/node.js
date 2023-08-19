@@ -204,8 +204,10 @@ SUBMIT BUTTON -> is trigering a POST request (by default???)
 
 
 
-          ASYNC Requests OPTIONAL -> then and catch is doing the same
-          _______________________
+          ASYNC AWAIT REQUESTS     OPTIONAL -> then and catch is doing the same
+          ____________________
+
+by default async function will always return a promise!
 
 normal requests do redirect or create? a new html page
 
@@ -215,7 +217,7 @@ works with JSON data (mostly)
 
 
 
-async in front of a function
+SYNTAX:
 
 let test = async (req, res) => {
 const example = await ....;
@@ -270,25 +272,20 @@ import    allows a file to consume a MODUL (which is exported)
 
 app.js:
 
-
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
 
 
 
-  
-
 with ROUTES FOLDER
 __________________
 
-app.js file:                   
+app.js:                   
 
 -> we use PATH now when we are routing
 
-
 const path = require('path');   ****** WITH THIS LINE
-
 
 
 app.get('/', function(req, res) {
@@ -356,10 +353,8 @@ const date = require(__dirname + '/date.js');
 
 
 
-
           DOM (Manipulation)
           __________________
-
 
 - the dom is created -> by the code and creates a tree structure (the DOM)
 
