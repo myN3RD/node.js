@@ -163,15 +163,19 @@ app.use(errorHandlerMiddleware)
 
 
 
-          IMAGES / FOLDER IMPORT
-          ______________________
+          CSS FILE, IMAGES / FOLDER IMPORT
+          ________________________________
 
-Examples:
-
+app.js:
 
 appExpress.use(express.static(path.join(__dirname, 'public'))); // makes it like if we are already in this folder
 appExpress.use(express.static(path.join(__dirname, 'views'))); // makes it like if we are already in this folder
 appExpress.use(express.static(path.join(__dirname, 'images'))); // makes it like if we are already in this folder
+
+
+html file:
+
+    <link rel="stylesheet" href="/css/style.css" />
 
 
 
