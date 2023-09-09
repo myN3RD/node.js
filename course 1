@@ -53,15 +53,64 @@ adding at the package json file to -> "scripts": {
 3.2 Terminal Command: 
 
    npm start -> nodemon is now running
+
+_________________
               
 
 
-4. If we want use ROUTES
+4. OPTIONAL
+
+   If we want use ROUTES
    npm install --save body-parser    // we just need a body parser if our website should handle http POST request data
                                      // for parsing incoming request bodys
 
+5. OPTIONAL
 
-optional                 npm install --save mongodb
+  npm install --save mongodb
+
+
+
+
+          CREATING A NEW SERVER
+          _____________________
+
+create a file -> app.js -> its the route file to start a server with node.js
+
+
+const http = require("http");
+
+const express = require("express");
+
+const app = express();
+
+// MIDDLEWARE
+app.use((req, res, next) => {
+  // use allows us to add a middleware function
+  console.log("In the middleware");
+  next(); // next allows us to travel to the next middleware
+});
+
+app.use((req, res, next) => {
+  console.log("Another middleware");
+  res.send("<h1>Hello</h1>"); // allows to send a response
+});
+
+const server = http.createServer(app);
+
+server.listen(3000);
+
+
+_____________________________ _/ _/ _/
+
+const http = require('http');
+
+const server = http.createServer((req, res) => {       // create server callback function
+    console.log(req);
+});
+
+server.listen(3000);                                   // looping process (Event Loop)  -> keep on listening for requests
+
+// *** THATS ALL WE NEED TO CREATE A NEW SERVER ***
 
 
 
@@ -110,50 +159,6 @@ const errorHandlerMiddleware = require("./middleware/error-handler");
 
 // routes
 app.use(errorHandlerMiddleware)
-
-
-
-
-          CREATING A NEW SERVER
-          _____________________
-
-create a file -> app.js -> its the route file to start a server with node.js
-
-
-
-const http = require("http");
-
-const express = require("express");
-
-const app = express();
-
-// MIDDLEWARE
-app.use((req, res, next) => {
-  // use allows us to add a middleware function
-  console.log("In the middleware");
-  next(); // next allows us to travel to the next middleware
-});
-
-app.use((req, res, next) => {
-  console.log("Another middleware");
-  res.send("<h1>Hello</h1>"); // allows to send a response
-});
-
-const server = http.createServer(app);
-
-server.listen(3000);
-
-
-_____________________________
-const http = require('http');
-
-const server = http.createServer((req, res) => {       // create server callback function
-    console.log(req);
-});
-
-server.listen(3000);                                   // looping process (Event Loop)  -> keep on listening for requests
-
-// *** THATS ALL WE NEED TO CREATE A NEW SERVER ***
 
 
 
