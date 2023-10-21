@@ -26,15 +26,6 @@ fs.writeFileSync("message.txt", "DUMMY");
 
 
 
-
-LIVE SERVER START
-_________________
-
-terminal command: 
--> live-server
-
-
-
   
           VSCode SETUP
           ____________
