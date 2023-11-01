@@ -10,17 +10,23 @@ https://roadmap.sh/nodejs
 - is an API
 - JS RUNTIME -> allows to run javascript on a server (= outside of a browser)
 - package.json => the file includes all the packages which have installed in node (= dependencies)
+- node is build around (using) modules! 
 
-1. Datei speichern                                                                           SAVE
-2. Server starten (zb. im Terminal mit den Befehl -> node app.js                             EXECUTE
-3. (Web-)Seite Starten     zb. mit google chrome -> dort in die URL -> localhost:3000/test   RUN
+1. Safe File                                                                                 SAVE
+2. Start Server (in Terminal -> node (filename) app.js                                       EXECUTE
+-> SETUP A PORT
+3. (Web-)Site starting     zb. mit google chrome -> dort in die URL -> localhost:3000/test   RUN
 
 require KEYWORD -> to import files 
                 -> or npm packages
 
 
 
+USING/REQUIERING MODULES
+________________________
+
 const fs = require("fs"); // = filesystem package core module
+
 random -> for creating the message.txt file
 fs.writeFileSync("message.txt", "DUMMY");
 
@@ -30,7 +36,7 @@ fs.writeFileSync("message.txt", "DUMMY");
           VSCode SETUP
           ____________
 
-1. (run in terminal) npm init -> to get the package.json (file) => file includes all the packages (dependencies) which have installed in node
+1. (run in terminal) npm init -> to get the package.json (file) => file includes all the packages (dependencies) which are installed in node
 
 2. npm install --save express   -> its creating the node modules folder -> express is all about middlewares
 
