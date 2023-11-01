@@ -8,7 +8,7 @@ https://roadmap.sh/nodejs
 - is an Backend Framework
 - for Server Side Applications
 - is an API
-- JS RUNTIME -> allows to run javascript on a server
+- JS RUNTIME -> allows to run javascript on a server (= outside of a browser)
 - package.json => the file includes all the packages which have installed in node (= dependencies)
 
 1. Datei speichern                                                                           SAVE
