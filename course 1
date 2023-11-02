@@ -32,6 +32,19 @@ fs.writeFileSync("message.txt", "DUMMY");
 
 
 
+
+SYNCHRONOUS VS. ASYNCHRONOUS CODE
+_________________________________
+
+SYNCHRONOUS         ASYNCHRONOUS
+     ⬇️                  ⬇️
+BLOCKING CODE 👎    NON-BLOCKING CODE 👍
+
+
+                    CALLBACK FUNCTIONS !!?!?
+
+
+
   
           VSCode SETUP
           ____________
