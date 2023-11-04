@@ -22,13 +22,17 @@ const url = require("url");
 const server = http.createServer((req, res) => {
   const pathName = req.url;
 
-
-  if (pathName === "/api") {
+  if (pathName === "/" || pathName === "/1234") {
+    res.end("This is the 1234 URL");
+  } else if (pathName === "/differentURL") {
+    res.end("This is a different URL");
+  } else if (pathName === "/api") {
     // SIMPLE API
     fs.readFile(`${__dirname}/dev-data/data.json`, "utf-8", (err, data) => {
       const productData = JSON.parse(data);
       console.log(productData);
-    res.end(data);
+      res.writeHead(200, { "Content-type": "application/json" }); // , {.....} -> gives us the JSON viewer pro look
+      res.end(data);
     });
   } else {
     res.writeHead("404"); // OPTIONAL to write the statuscode
