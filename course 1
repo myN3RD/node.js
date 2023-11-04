@@ -19,6 +19,14 @@ using callbacks doesnt make it automaticall asynchronous!
 
 
 
+          SHOURTCUTS
+          __________
+
+open dev tools on chrome: Option + ⌘ + J 
+
+
+
+
           WHEN WE WRITE CODE
           __________________
 
@@ -331,7 +339,38 @@ import    allows a file to consume a MODUL (which is exported)
           ROUTING
           _______
 
--> HOW TO CONNECT HTML FILE with another File     lecture 234 // or 70 max
+-> HOW TO CONNECT HTML FILE with another Files (URLs)     lecture 234 // or 70 max
+
+-> for routing we use express (in real world)
+
+
+__________________________________________________
+-> from sratch we use: const url = require("url");
+
+
+const fs = require("fs");
+const http = require("http");
+const url = require("url");
+
+const server = http.createServer((req, res) => {
+  const pathName = req.url;
+
+  if (pathName === "/" || pathName === "/1234") {
+    res.end("This is the 1234 URL");
+  } else if (pathName === "/differentURL") {
+    res.end("This is a different URL");
+  } else {
+    res.writeHead("404"); // OPTIONAL to write the statuscode
+    res.end("Page not found");
+  }
+});
+
+server.listen(8000, () => {
+  console.log("Server is listening on request on port 8000");
+});
+__________________________________________________
+
+
 
 app.js:
 
