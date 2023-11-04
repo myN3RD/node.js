@@ -371,6 +371,10 @@ server.listen(8000, () => {
 __________________________________________________
 
 
+NOTE:
+./ is the root folder of the current directory -> NOT optimal
+__dirname -> optimal
+
 
 app.js:
 
