@@ -1,4 +1,4 @@
-Re presentational S tate T ransfer
+RE-presentational S-tate T-ransfer
 
 REST is a "architectural Style" for designing APIs, like defferent buildings which has defferent architectural styles
 
@@ -28,8 +28,8 @@ const server = http.createServer((req, res) => {
     fs.readFile(`${__dirname}/dev-data/data.json`, "utf-8", (err, data) => {
       const productData = JSON.parse(data);
       console.log(productData);
+    res.end(data);
     });
-    res.end("API");
   } else {
     res.writeHead("404"); // OPTIONAL to write the statuscode
     res.end("Page not found");
