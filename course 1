@@ -73,9 +73,20 @@ BLOCKING CODE 👎    NON-BLOCKING CODE 👍
 
 3. npm install nodemon --save-dev
 
-adding at the package json file to -> "scripts": {
+replace the file content with that, in the package json file -> 
+
+{
+  "name": "complete-node.js-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"                                  // this line that the app will execute automaticly after making changes
+    "start": "nodemon app.js"     // this line will execute/safe the app automaticly after making changes
+  },
+  "author": "",
+  "license": "ISC"
+}                            
 
 
 3.2 Terminal Command: 
