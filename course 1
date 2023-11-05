@@ -11,7 +11,8 @@ https://roadmap.sh/nodejs
 - JS RUNTIME -> allows to run javascript on a server (= outside of a browser)
 - package.json => the file includes all the packages which have installed in node (= dependencies)
 - node is using just one single thread
-- node is build around (using) modules and callbacks!
+- node is build around (using) MODULES and CALLBACKS!
+- in node, every file is treated as a MODULE
 
 NOTE
 using callbacks doesnt make it automaticall asynchronous!
