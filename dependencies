@@ -1,9 +1,29 @@
+         
+
+regular dependencies          dev(elopment) dependencies
+                              (for developing the app)
+____________________          __________________________
+
+needed for production         NOT needed for production
+
+                              
+npm install dependency        npm install dependency --save-dev
+npm i dependency              npm i dependency --save-dev
+
+
+
+NOTE 
+There are 2 types of installation
+
+local install (only in the project)          global install (aviable anywhere on the maschine)
+                                             npm i dependency --global
+
+
+
+
           useful Dependencies
           ___________________
 
-Terminal Command:
-npm install dependency
+slugify                       nodemon
 
-
-slugify
-
+        
