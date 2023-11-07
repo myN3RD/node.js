@@ -26,7 +26,7 @@ local install (only in the project)          global install (aviable anywhere on
 
 slugify: 
 
-HOW TO CREATE A 'SLUG':
+HOW TO CREATE A 'SLUG': (the data for the dataObject comes from the json file (its necessary!))
 
 app.js
 
