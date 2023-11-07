@@ -22,6 +22,22 @@ local install (only in the project)          global install (aviable anywhere on
 
 
 
+
+FYI
+
+"nodemon": "^3.0.1"
+
+            ⬆️ ⬆️ ⬆️
+
+MAJOR, MINOR, PATCH(for bugs fixing)   - versions
+
+When the MAJOR version is changing -> it could break our code -> means we have to update!
+
+the other two dont break our code.
+
+
+
+
           useful Dependencies
           ___________________
 
