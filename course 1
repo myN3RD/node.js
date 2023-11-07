@@ -13,7 +13,8 @@ https://roadmap.sh/nodejs
 - node is using just one single thread
 - node is build around (using) MODULES and CALLBACKS!
 - in node, every file is treated as a MODULE ->
-          THAT MEANS:
+
+          THAT MEANS (if we wanna export and import our own module for example):
 
 app.js
 const replaceTemplate = require('./modules/replaceTemplates');
@@ -24,6 +25,8 @@ xxx.js (in the Modules folder)
 module.exports = (xxx, xxx) => { // thats a anynomous function which we export from here with the modules object
 ...
 };
+
+
 
 
 NOTE
@@ -60,6 +63,20 @@ const fs = require("fs"); // = filesystem package core module
 
 random -> for creating the message.txt file
 fs.writeFileSync("message.txt", "DUMMY");
+
+
+BEST CASE ORDER of using MODULES:
+
+1. that are the 'CORE' MODULES
+const fs = require("fs");
+const http = require("http");
+const url = require("url");
+
+2. requirering 3 party modules
+const slugify = require('slugify');
+
+3. OWN IMPORTED MODULES
+const replaceTemplate = require('./modules/replaceTemplates');
 
 
 
