@@ -24,6 +24,18 @@ local install (only in the project)          global install (aviable anywhere on
           useful Dependencies
           ___________________
 
-slugify                       nodemon
+slugify: 
+
+HOW TO CREATE A 'SLUG':
+
+app.js
+
+const slugs = dataObject.map(element => slugify(element.productName, { lower: true }));
+console.log(slugs);                      
+
+
+
+nodemon (for dev)
+
 
         
