@@ -10,8 +10,10 @@ https://roadmap.sh/nodejs
 - is an API
 - JS RUNTIME -> allows to run javascript on a server (= outside of a browser)
 - package.json => the file includes all the packages which have installed in node (= dependencies)
-- node is using just one single thread
-- node is build around (using) MODULES and CALLBACKS!
+- node is using just one single thread (if there are 10 users or 1000000 -> its still a single thread)
+
+
+- node is build around (using) MODULES and CALLBACKS (functions)!
 - in node, every file is treated as a MODULE ->
 
           THAT MEANS (if we wanna export and import our own module for example):
@@ -25,6 +27,22 @@ xxx.js (in the Modules folder)
 module.exports = (xxx, xxx) => { // thats a anynomous function which we export from here with the modules object
 ...
 };
+
+
+
+
+          EVENT LOOP
+          __________
+
+lecture 32
+
+"The heart of the node architecture"
+
+All the app code that is inside the CALLBACK FUNCTIONS (non-top-level-code)
+
+
+
+
 
 
 
