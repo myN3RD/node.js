@@ -32,6 +32,8 @@ module.exports = (xxx, xxx) => { // thats a anynomous function which we export f
 NOTE
 using callbacks doesn't make it automatically asynchronous!
 
+never share the nodes modules folder (there is no need for) -its way to big, or upload it on github!
+
 
 
 
