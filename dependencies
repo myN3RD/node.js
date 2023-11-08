@@ -52,7 +52,7 @@ npm uninstall dependency
 
 
 
-          useful Dependencies
+          USEFUL DEPENDENCIES
           ___________________
 
 slugify: 
@@ -67,6 +67,8 @@ console.log(slugs);
 
 
 nodemon (for dev)
+
+TODO Highlight
 
 
         
