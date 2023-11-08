@@ -53,13 +53,15 @@ open dev tools on chrome: Option + ⌘ + J
 -> SETUP A PORT
 3. (Web-)Site starting     zb. mit google chrome -> dort in die URL -> localhost:3000/test   RUN
 
-require KEYWORD -> to import files 
-                -> or npm packages
 
 
 
 USING/REQUIERING MODULES
 ________________________
+
+require KEYWORD -> to import files 
+                -> or npm packages
+
 
 const fs = require("fs"); // = filesystem package core module
 
