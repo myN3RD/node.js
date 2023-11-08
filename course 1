@@ -32,7 +32,17 @@ module.exports = (xxx, xxx) => { // thats a anynomous function which we export f
 NOTE
 using callbacks doesn't make it automatically asynchronous!
 
-never share the nodes modules folder (there is no need for) -its way to big, or upload it on github!
+
+?!?!?!?!??!
+
+localhost:  makes my own ip adress behave like a remote web server
+
+('/')  Thats the Starting Page (the root)
+... JavaScript object spread operator                                   https://www.javascripttutorial.net/es-next/javascript-object-spread/
+
+Events, Event Loop:
+
+
 
 
 
@@ -258,17 +268,12 @@ html file:
           MODULES
           _______
 
-A Package is also called as a MODULE
-localhost:  makes my own ip adress behave like a remote web server
+NOTE:
+
+never share the nodes modules folder (there is no need for) -its way to big, or upload it on github!
 
 
-('/')  Thats the Starting Page (the root)
-... JavaScript object spread operator                                   https://www.javascripttutorial.net/es-next/javascript-object-spread/
-
-if (url === '/');    die drei = bedeuten: if ist nur true, wenn die url is an string und den Wert hat.
-
-
-Events, Event Loop:
+npm packages are also called MODULE(S)
 
 
 
