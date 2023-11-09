@@ -4,7 +4,7 @@ _______________
 https://roadmap.sh/nodejs
 
 
-- Express is a (http) Framework for (running) Node.js (servers)
+- Express is a minimal (http) Framework for (running) Node.js (servers) build on TOP of node
 - is an Backend Framework
 - for Server Side Applications
 - is an API
