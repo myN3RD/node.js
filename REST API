@@ -1,6 +1,7 @@
 RE-presentational S-tate T-ransfer
 
-REST is a "architectural Style" for designing APIs, like defferent buildings which has defferent architectural styles
+REST is a "architectural Style" for designing APIs, like different buildings,
+which has different architectural styles.
 
 other API Styles are:
 
@@ -11,13 +12,14 @@ etc.
 - the Goldstandard for Web APIs is REST!
 
 - POSTMAN is the way to go for testing APIs
+  (we dont need a frontend when using POSTMAN!)
 
 
 
             SIMPLE API
             __________
 
-const fs = require("fs");
+const fs = require("fs");   // fs or http is also actually an API
 const http = require("http");
 const url = require("url");
 
@@ -29,6 +31,7 @@ YES its SYNCHRONOUS and will block the code - but its the better solutions,
 as it would be below in the code block and read everytime again, if a user refreshes (requested) the url
 
 TOP LEVEL CODE: (will be read just ones)
+
 const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, "utf-8");
 const dataObject = JSON.parse(data);
 
@@ -82,10 +85,11 @@ _____________________________
 
 
 
-
 - we transfer DATA instead of User Interfaces from someone elses server to our server
 - a different kind of response is needed
-- we dont call  render  like  res.render, cause APIs not render views -> they don return html files. And a rendered view is an html file 
+- we dont call  render  like  res.render, cause APIs not render views -> they dont return html files. 
+  And a rendered view is an html file 
+
 
 4 Points we have to think about:
   • Endpoints
@@ -96,7 +100,19 @@ _____________________________
 !- only the response and request data changes. NOT the general server-side logic!
 
 
+ENDPOINTS
+_________
+
+Naming:
+
+www.xxx.de/ENDPOINT           ALWAYS PLURAL
+       ⬇️     ⬇️         ⬇️      ⬇️
+       URL/getTour ---> GET  /tours/
+
+
+
 DATA FORMATS we can exchange
+____________________________
 
 HTML, Plain Text, XML, JSON
                          ↑
@@ -122,16 +138,15 @@ HTML, Plain Text, XML, JSON
             ____________________
             
    
-  GET (request) to get a resource or data from the server
-      the response is giving us the resoure or data back to the client.
+  GET (request) to get / (read) a resource or data FROM the SERVER -> BACK to the CLIENT.
       
-  POST (request) Post a resource from the client to the server -> Thats what we use actually everytime
+  POST (request) to post / (create) a resource FROM the CLIENT -> BACK to the SERVER -> (Thats what we use actually everytime??)
   
-  PUT (request) is updating data in the database -> the entire entry with the sepific element inside will be replaced  { user: , email: password: }
+  PUT (request) is updating data in the database -> the ENTIRE ENTRY with the sepific element inside will be replaced  { user: , email: password: }
   
-  PATCH is updating data in the database -> the sepific element inside the entry will be replaced  { user: , email: password: } -> just the email 
+  PATCH is updating data in the database -> a SINGLE/SPECIFIC ELEMENT inside the ENTRY will be replaced  { user: , email: password: } -> just the email 
   
-  DELETE
+  DELETE 
  
   
   
@@ -147,14 +162,10 @@ will clearly difined request +      Server and Client dont store any connection 
 response data structure             , every request is handled seperately
   
   
-  
-  
+
 
 
 REST API METHODS examples
-
-
-we have to use POSTMAN when we hhave no frontend!!!
   
   
 // fetching all articles
@@ -249,7 +260,7 @@ app.patch('/articles/:articleTitle', function(req, res) {
 });
 
 
-// delete request    // in POSTMAN we can choose now whcih article we want to delete
+// delete request    // in POSTMAN we can choose now which article we want to delete
 app.delete('/articles/:articleTitle', function(req, res) { 
     Article.deleteOne(                 
         {title: req.params.articleTitle},
