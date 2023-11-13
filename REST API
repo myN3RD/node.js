@@ -67,9 +67,9 @@ server.listen(8000, () => {
 https://jsonplaceholder.typicode.com/
 
 
-HOW TO FETCH JSON DATA IN JS:
-_____________________________
-
+          HOW TO ***FETCH*** JSON DATA IN JS:
+          ___________________________________
+    
 <script>
   fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson')
     .then(res => {
@@ -81,8 +81,6 @@ _____________________________
     })
     .catch(err => console.log(err));
 </script>
-
-
 
 
 - we transfer DATA instead of User Interfaces from someone elses server to our server
@@ -99,15 +97,6 @@ _____________________________
 
 !- only the response and request data changes. NOT the general server-side logic!
 
-
-ENDPOINTS
-_________
-
-Naming:
-
-www.xxx.de/ENDPOINT           ALWAYS PLURAL
-       ⬇️     ⬇️         ⬇️      ⬇️
-       URL/getTour ---> GET  /tours/
 
 
 
@@ -147,10 +136,24 @@ HTML, Plain Text, XML, JSON
   PATCH is updating data in the database -> a SINGLE/SPECIFIC ELEMENT inside the ENTRY will be replaced  { user: , email: password: } -> just the email 
   
   DELETE 
+
+
+
+
+          ENDPOINTS
+          _________
+
+Naming:
+
+www.xxx.de/ENDPOINT use endpoint name     
+             ⬇️          ⬇️      
+          /getTour ---> GET  /tours/7 ⬅️ Tour id or name whatever
+                                ⬆️
+                            ALWAYS PLURAL
+
  
   
-  
-  
+    
              REST Principles
              _______________
              
@@ -164,8 +167,7 @@ response data structure             , every request is handled seperately
   
 
 
-
-REST API METHODS examples
+REST API METHODS examples:
   
   
 // fetching all articles
