@@ -220,11 +220,18 @@ server.listen(3000);                                   // looping process (Event
 
           MIDDLEWARE
           __________
+
+middleware is a function, that can modify the incoming REQUEST data
+
+It's called middleware because it stands between. 'In the MIDDLE of the request and the response.'
+
+
 SYNTAX:
-app.use((req, res, next) => {};   // next just if we use multiple middlewares
+
+app.use((req, res, next) => {};    // .use allows us to add a middleware function
 
 
-app.use((req, res, next) => {   // .use allows us to add a middleware function
+app.use((req, res, next) => {   // next just if we use multiple middlewares
   console.log("In the middleware");
   next(); // next allows us to travel to the next middleware
 });
