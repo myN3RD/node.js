@@ -43,12 +43,8 @@ All the app code that is inside the CALLBACK FUNCTIONS (non-top-level-code)
 
 
 
-
-
-
-
-NOTE
-using callbacks doesn't make it automatically asynchronous!
+NOTE:
+using callbacks doesn't make it automaticly asynchronous!
 
 
 ?!?!?!?!??!
@@ -59,8 +55,6 @@ localhost:  makes my own ip adress behave like a remote web server
 ... JavaScript object spread operator                                   https://www.javascripttutorial.net/es-next/javascript-object-spread/
 
 Events, Event Loop:
-
-
 
 
 
@@ -84,9 +78,12 @@ open dev tools on chrome: Option + ⌘ + J
 
 
 
-USING/REQUIERING MODULES
-________________________
+          USING/REQUIERING MODULES
+          ________________________
 
+- npm packages are also called MODULE(S)
+
+          
 require KEYWORD -> to import files 
                 -> or npm packages
 
@@ -111,10 +108,15 @@ const slugify = require('slugify');
 const replaceTemplate = require('./modules/replaceTemplates');
 
 
+NOTE:
+
+never share the nodes modules folder (there is no need for) -its way to big, or upload it on github!
 
 
-SYNCHRONOUS VS. ASYNCHRONOUS CODE
-_________________________________
+
+
+          SYNCHRONOUS VS. ASYNCHRONOUS CODE
+          _________________________________
 
 SYNCHRONOUS         ASYNCHRONOUS
      ⬇️                  ⬇️
@@ -280,18 +282,6 @@ app.use("/images", express.static("images")); _/ _/ _/
 html file:
 
     <link rel="stylesheet" href="/css/style.css" />
-
-
-
-          MODULES
-          _______
-
-NOTE:
-
-never share the nodes modules folder (there is no need for) -its way to big, or upload it on github!
-
-
-npm packages are also called MODULE(S)
 
 
 
