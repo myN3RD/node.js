@@ -68,7 +68,6 @@ server.listen(8000, () => {
 
 
 
-
             FAKE REST API for development
             _____________________________
 
@@ -144,6 +143,9 @@ HTML, Plain Text, XML, JSON
   PATCH is updating data in the database -> a SINGLE/SPECIFIC ELEMENT inside the ENTRY will be replaced  { user: , email: password: } -> just the email 
   
   DELETE 
+
+
+-> That CRUD operations!
 
 
 
