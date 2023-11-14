@@ -42,7 +42,6 @@ All the app code that is inside the CALLBACK FUNCTIONS (non-top-level-code)
 
 
 
-
 NOTE:
 using callbacks doesn't make it automaticly asynchronous!
 
@@ -161,7 +160,6 @@ replace the file content with that, in the package json file ->
 
 _________________
               
-
 
 4. OPTIONAL
 
@@ -563,7 +561,6 @@ document.getElementsByTagName('li')[1].innerHTML = 'ok';    // its Elements so a
 
 
 
-
           STATUSCODES
           ___________
 
@@ -677,19 +674,6 @@ Models Views Controllers
 
 
 
-
-
-          APIs  (Webserver) Application Programming Interface
-          _________________
-          
-REST      |       GraphQL..
-
-Types of Requests that the Backend allows -> calls API
-.
-
-
-
-
           SENDING E-MAIL <how to>
           _______________________
 
@@ -702,12 +686,10 @@ we have to use a third party service (Mail Service)
 
 
 
-
           COOKIES   HOW TO SETUP COOKIES
           _______
 
   res.setHeader('Set-Cookie', 'loggedIn=true');
-  
   
   
 
@@ -837,8 +819,8 @@ require('dotenv').config()
 console.log(process.env) // remove this after you've confirmed everything is working
 
 
-CONFIGURATION:
-______________
+CONFIGURATION
+_____________
 
 .env file has to be in the root folder!
 naming has to be .env !
@@ -849,6 +831,3 @@ SYNTAX RULES: we have key value pairs (no "" needed)
 NAME=VALUE
 SECRET=ThisIsOurSecret
 API_KEY=jdiuwjwnduidnwoqidnqidno
-
-
-
