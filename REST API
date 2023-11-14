@@ -1,3 +1,10 @@
+    APIs  (Webserver) Application Programming Interface
+    _________________
+          
+REST      |       GraphQL..
+
+Types of Requests that the Backend allows -> calls API
+
 RE-presentational S-tate T-ransfer
 
 REST is a "architectural Style" for designing APIs, like different buildings,
@@ -10,6 +17,7 @@ FALCOR
 etc.
 
 - the Goldstandard for Web APIs is REST!
+
 
 - POSTMAN is the way to go for testing APIs
   (we dont need a frontend when using POSTMAN!)
