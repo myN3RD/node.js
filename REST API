@@ -149,6 +149,16 @@ HTML, Plain Text, XML, JSON
 
 
 
+"request response cycle" -> we have always to send back something!
+
+like this:
+app.post('/api/v1/tours', (req,res) => {
+console.log(req.body);
+res.send('Done');
+});
+
+
+
 
           ENDPOINTS
           _________
