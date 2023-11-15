@@ -574,6 +574,7 @@ document.getElementsByTagName('li')[1].innerHTML = 'ok';    // its Elements so a
           ___________
 
 200 Success
+201 Created -> when we have overwritten a json file for example
 4** Client Error
 5** Server Error
 
