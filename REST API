@@ -167,7 +167,7 @@ Naming:
 
 www.xxx.de/ENDPOINT use endpoint name     
              ⬇️          ⬇️      
-          /getTour ---> GET  /tours/7 ⬅️ Tour id or name whatever
+          /getTour ---> GET  /tours/7 ⬅️ Tour id or name whatever (this is a variable!)
                                 ⬆️
                             ALWAYS PLURAL
 
