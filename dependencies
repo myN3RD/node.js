@@ -52,8 +52,8 @@ npm uninstall dependency
 
 
 
-          USEFUL DEPENDENCIES
-          ___________________
+          USEFUL NPM DEPENDENCIES
+          _______________________
 
 slugify: 
 
@@ -68,7 +68,8 @@ console.log(slugs);
 
 nodemon (for dev)
 
-TODO Highlight
+browserify
+
 
 
         
