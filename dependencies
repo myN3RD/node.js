@@ -88,6 +88,13 @@ const morgan = require('morgan');
 app.use(morgan('dev'));
 
 
+-> when we make a req now in postman for example:
+
+-> we will see this in our console:
+GET /api/v1/tours 200 5.709 ms - 8775
+                                  ⬆️ (size of the response)
+
+
 
 browserify
 __________
