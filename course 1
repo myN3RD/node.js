@@ -1,7 +1,9 @@
 EVENT LOOP - 50
-
+SHOURTCUTS - 75
+WHEN WE WRITE CODE - 82
+VSCode SETUP -150
 MIDDLEWARE -240
-
+CSS FILE, IMAGES / FOLDER IMPORT - 310
 STATUSCODES - 600
 TYPES OF ERRORS - 610
 
@@ -320,19 +322,6 @@ app.use("/images", express.static("images")); _/ _/ _/
 html file:
 
     <link rel="stylesheet" href="/css/style.css" />
-
-
-
-
-          FUNCTIONS
-          _________
-
-Callback Function: Will be called when 'exit' in this case is done. 
-
-
-EXAMPLE: process.on('exit', function() {
-                                 ↑
-}):                           CALLBACK
 
 
 
