@@ -130,9 +130,9 @@ never share the nodes modules folder (there is no need for) -its way to big, or 
           SYNCHRONOUS VS. ASYNCHRONOUS CODE
           _________________________________
 
-SYNCHRONOUS         ASYNCHRONOUS
-     ⬇️                  ⬇️
-BLOCKING CODE 👎    NON-BLOCKING CODE 👍
+          SYNCHRONOUS         ASYNCHRONOUS
+               ⬇️                  ⬇️
+          BLOCKING CODE 👎    NON-BLOCKING CODE 👍
 
 
                     CALLBACK FUNCTIONS !!?!?
@@ -171,8 +171,7 @@ replace the file content with that, in the package json file ->
 
    npm start -> nodemon is now running
 
-_________________
-              
+
 
 4. OPTIONAL
 
@@ -180,17 +179,13 @@ _________________
    npm install --save body-parser    // we just need a body parser if our website should handle http POST request data
                                      // for parsing incoming request bodys
 
-5. OPTIONAL
-
-  npm install --save mongodb
-
 
 
 
           CREATING A NEW SERVER
           _____________________
 
-create a file -> app.js -> its the route file to start a server with node.js
+app.js -> its the route file to start a server with node.js
 
 
 const http = require("http");
@@ -211,12 +206,14 @@ app.use((req, res, next) => {
   res.send("<h1>Hello</h1>"); // allows to send a response
 });
 
+
 const server = http.createServer(app);
 
 server.listen(3000);
 
-
 _____________________________ _/ _/ _/
+
+
 
 const http = require('http');
 
@@ -236,25 +233,46 @@ server.listen(3000);                                   // looping process (Event
 
 middleware is a function, that can modify the incoming REQUEST data
 
-It's called middleware because it stands between. 'In the MIDDLE of the request and the response.'
+It's called middleware because it stands between. 
+'In the MIDDLE of the request and the response.'
 
 
 SYNTAX:
 
 app.use();  // .use allows us to add a middleware function
 
-app.use((req, res, next) => {};   
+app.use((req, res, next) => {
+
+};   
 
 
-app.use((req, res, next) => {   // next just if we use multiple middlewares
+
+app.use((req, res, next) => {             // next just if we use multiple middlewares
   console.log("In the middleware");
   next(); // next allows us to travel to the next middleware
 });
 
-app.use((req, res, next) => {
+app.use((req, res, next) => {  
   console.log("Another middleware");
-  res.send("<h1>Hello</h1>"); // allows to send a response
+  next();
 });
+
+app.use((req, res) => {
+  console.log("Last middleware");
+  res.send("<h1>Hello</h1>");           // res.send to finally send a response
+});
+
+
+lecture 58
+(incoming) REQ -> MIDDLEWARE STACK -> RES
+-> this  calls the "Response Request Cycle"
+
+
+!!!
+The "Route-Handler" has to be AFTER the middleware (function) otherwise the middleware will not be called!
+Because the "Response Request Cycle" has already be finished.
+
+- The Order really matters in express
 
 
 
