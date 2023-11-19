@@ -1,3 +1,16 @@
+EVENT LOOP 50
+
+
+
+STATUSCODES 600
+TYPES OF ERRORS 610
+
+
+***************
+
+
+
+
 NODE.JS ROADMAP                                                                                                                                    START 20.10.22
 _______________
 
@@ -575,6 +588,7 @@ document.getElementsByTagName('li')[1].innerHTML = 'ok';    // its Elements so a
 
 200 Success
 201 Created -> when we have overwritten a json file for example
+204 Deleted -> means: No Content
 4** Client Error
 5** Server Error
 
