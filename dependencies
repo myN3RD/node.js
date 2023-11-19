@@ -1,4 +1,4 @@
-aka npm packages!?!?
+aka npm packages
 
 
 regular dependencies          dev(elopment) dependencies
@@ -68,8 +68,9 @@ console.log(slugs);
 
 nodemon (for dev)
 
-browserify
+morgan -> when we work with APIs -> to see request data right in the console
 
+browserify
 
 
         
