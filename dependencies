@@ -55,7 +55,8 @@ npm uninstall dependency
           USEFUL NPM DEPENDENCIES
           _______________________
 
-slugify: 
+slugify 
+_______
 
 HOW TO CREATE A 'SLUG': (the data for the dataObject comes from the json file (its necessary!))
 
@@ -67,10 +68,29 @@ console.log(slugs);
 
 
 nodemon (for dev)
+_________________
 
-morgan -> when we work with APIs -> to see request data right in the console
+
+
+morgan
+______
+
+-> when we work with APIs -> to see request data right in the console
+
+npm i morgan
+
+
+app.js:
+
+const morgan = require('morgan');
+
+// MIDDLEWARES
+app.use(morgan('dev'));
+
+
 
 browserify
+__________
 
 
         
