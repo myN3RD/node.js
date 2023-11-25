@@ -136,7 +136,7 @@ HTML, Plain Text, XML, JSON
    
   GET (request) to get / (read) a resource or data FROM the SERVER -> BACK to the CLIENT.
       
-  POST (request) to post / (create) a resource FROM the CLIENT -> BACK to the SERVER -> (Thats what we use actually everytime??)
+  POST (request) to post / (create) a resource FROM the CLIENT -> BACK to the SERVER -> (Thats what we use actually everytime??) -> gives us back a JS Object
   
   PUT (request) is updating data in the database -> the ENTIRE ENTRY with the sepific element inside will be replaced  { user: , email: password: }
   
