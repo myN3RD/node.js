@@ -284,8 +284,8 @@ PARAM MIDDLEWARE
 ________________
 
 param stands for parameter
-
-
+                                     4. ARGUMENT
+                                     ⬇️
 router.param('id', (req, res, next, val) => { // val will hold the id parameter
   console.log(`Tour id is: ${val}`);
   next();
