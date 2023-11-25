@@ -4,9 +4,11 @@ WHEN WE WRITE CODE - 82
 VSCode SETUP -150
 MIDDLEWARE -240
 CSS FILE, IMAGES / FOLDER IMPORT - 310
+DOM (Manipulation) - 590
 STATUSCODES - 600
 TYPES OF ERRORS - 620
-MVC / DESIGN PATTERN - 700
+MVC / DESIGN PATTERN - 740
+SENDING E-MAIL <how to> - 755
 WEBSOCKETS - 790
 
 
@@ -671,10 +673,11 @@ CORS Error (Lektion 366) -> solving only on our?? server
 
 
 
-          FOR   DYNAMIC   OR REALTIME CONTENT / FEATURES IN THE FRONTEND ---> we use --->  TEMPLATING ENGINES
-          ____________________________________________
+          FOR  DYNAMIC  OR REALTIME CONTENT / FEATURES IN THE FRONTEND 
+                    ---> we use --->  TEMPLATING ENGINES
+          ____________________________________________________________
 
-      or View Engine. Thats why we need in this case when we are using EJS for example, we need a Views folder!
+or View Engine. Thats why we need, in this case, when we are using EJS -> we need a Views folder!
 
 
 for example:
@@ -736,7 +739,7 @@ DYNAMIC CONTENT
           MVC / DESIGN PATTERN  kind of Important
           ____________________
 
-- Model View Controller-
+- Model View Controller -
 
 
                Routes
