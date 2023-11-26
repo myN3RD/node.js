@@ -10,6 +10,8 @@ TYPES OF ERRORS - 620
 MVC / DESIGN PATTERN - 740
 SENDING E-MAIL <how to> - 755
 WEBSOCKETS - 790
+OAUTH - 860
+DOTENV - 880
 
 
 ***************
@@ -860,12 +862,11 @@ const _ = require('lodash');
 
 https://www.passportjs.org/packages/passport-google-oauth20/
 
+npm i passport-google-oauth20
 
-npm install passport-google-oauth20
+npm i mongoose-findorcreate
 
-npm install mongoose-findorcreate
-
-3. npm install passport
+npm i passport
 
 
 
@@ -873,9 +874,11 @@ npm install mongoose-findorcreate
           dotenv  .ENV
           _____________
 
+npm i dotenv
+
+- for environment variables
 - for NOT showing sensitive/privat data like API or encryption keys or mongoDB login data etc.
 
-npm install dotenv --save
 
 app.js:
 
