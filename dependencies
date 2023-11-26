@@ -126,7 +126,6 @@ should look like this now:
 {
   "extends": ["airbnb", "plugin:node/recommended"],
   "rules": {
-    "prettier/prettier": "error",
     "spaced-comment": "off",
     "no-console": "warn",
     "consistent-return": "off",
