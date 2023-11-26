@@ -48,6 +48,9 @@ module.exports = (xxx, xxx) => { // thats a anynomous function which we export f
 };
 
 
+- everything whats not related to express has to be outside of app.js file
+
+
 
 
           EVENT LOOP
@@ -191,27 +194,9 @@ replace the file content with that, in the package json file ->
           CREATING A NEW SERVER
           _____________________
 
-app.js -> its the route file to start a server with node.js
-
-
 const http = require("http");
-
 const express = require("express");
-
 const app = express();
-
-// MIDDLEWARE
-app.use((req, res, next) => {
-  // use allows us to add a middleware function
-  console.log("In the middleware");
-  next(); // next allows us to travel to the next middleware
-});
-
-app.use((req, res, next) => {
-  console.log("Another middleware");
-  res.send("<h1>Hello</h1>"); // allows to send a response
-});
-
 
 const server = http.createServer(app);
 
@@ -248,7 +233,7 @@ SYNTAX:
 app.use();  // .use allows us to add a middleware function
 
 app.use((req, res, next) => {
-
+....
 };   
 
 
