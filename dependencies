@@ -96,6 +96,53 @@ GET /api/v1/tours 200 5.709 ms - 8775
 
 
 
+
+ESLint
+______
+
+1. npm i eslint eslint-config-airbnb eslint-plugin-node eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react --save-dev
+
+package.json:
+should look like this now:
+
+...  
+"devDependencies": {
+    "eslint": "^8.54.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-react": "^7.33.2"
+  }
+}
+...
+
+2. create .eslintrc.json
+
+3. PASTE CODE into  .eslintrc.json
+
+{
+  "extends": ["airbnb", "plugin:node/recommended"],
+  "rules": {
+    "prettier/prettier": "error",
+    "spaced-comment": "off",
+    "no-console": "warn",
+    "consistent-return": "off",
+    "func-names": "off",
+    "object-shorthand": "off",
+    "no-process-exit": "off",
+    "no-param-reassign": "off",
+    "no-return-await": "off",
+    "no-underscore-dangle": "off",
+    "class-methods-use-this": "off",
+    "prefer-destructuring": ["error", { "object": true, "array": false }],
+    "no-unused-vars": ["error", { "argsIgnorePattern": "req|res|next|val" }]
+  }
+}
+
+
+
+
 browserify
 __________
 
