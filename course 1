@@ -3,7 +3,7 @@ SHOURTCUTS - 75
 WHEN WE WRITE CODE - 82
 VSCode SETUP -150
 MIDDLEWARE -240
-CSS FILE, IMAGES / FOLDER IMPORT - 310
+SERVING STATIC FILES FROM A FOLDER (and not from a ROUTE) (CSS FILE, IMAGES etc. / FILE/FOLDER IMPORT) - 330
 DOM (Manipulation) - 590
 STATUSCODES - 600
 TYPES OF ERRORS - 620
@@ -325,15 +325,18 @@ app.use(errorHandlerMiddleware)
 
 
 
-          CSS FILE, IMAGES / FOLDER IMPORT
-          ________________________________
+          SERVING STATIC FILES FROM A FOLDER (and not from a ROUTE)
+          (CSS FILE, IMAGES etc. FILE/FOLDER IMPORT)
+          _________________________________________________________
 
 app.js:
 
+app.use(express.static(`${__dirname}/public`)); // JONAS
 app.use(express.static(path.join(__dirname, 'public'))); // makes it like if we are already in this folder
-app.use(express.static(path.join(__dirname, 'views'))); // makes it like if we are already in this folder
+app.use(express.static(path.join(__dirname, 'views')));
 app.use(express.static(path.join(__dirname, 'images'))); // makes it like if we are already in this folder ->  DOESNT WORK 
 app.use("/images", express.static("images")); _/ _/ _/
+
 
 
 html file:
