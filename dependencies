@@ -100,6 +100,8 @@ GET /api/v1/tours 200 5.709 ms - 8775
 ESLint
 ______
 
+ESLint is all about coding Rules! -> we can configure the Rules how we want them.
+
 1. npm i eslint eslint-config-airbnb eslint-plugin-node eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react --save-dev
 
 package.json:
