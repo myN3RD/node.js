@@ -7,7 +7,7 @@ SERVING STATIC FILES FROM A FOLDER (and not from a ROUTE) (CSS FILE, IMAGES etc.
 DOM (Manipulation) - 590
 STATUSCODES - 600
 TYPES OF ERRORS - 620
-MVC / DESIGN PATTERN - 740
+MVC (ARCHITECTURE) / DESIGN PATTERN - 740
 SENDING E-MAIL <how to> - 755
 WEBSOCKETS - 790
 OAUTH - 860
@@ -726,8 +726,8 @@ DYNAMIC CONTENT
 
 
 
-          MVC / DESIGN PATTERN  kind of Important
-          ____________________
+          MVC (ARCHITECTURE) / DESIGN PATTERN  kind of Important
+          ___________________________________
 
 - Model View Controller -
 
