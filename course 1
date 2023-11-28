@@ -8,7 +8,9 @@ DOM (Manipulation) - 590
 STATUSCODES - 600
 TYPES OF ERRORS - 620
 MVC (ARCHITECTURE) / DESIGN PATTERN - 740
-SENDING E-MAIL <how to> - 755
+SENDING E-MAIL <how to> - 744
+HOW TO SETUP COOKIES  - 755
+SESSIONS - 764
 WEBSOCKETS - 790
 OAUTH - 860
 DOTENV - 880
@@ -24,7 +26,6 @@ _______________
 
 https://roadmap.sh/nodejs
 
-- node.js is for backend webdevelopment
 - Express is a minimal (http) Framework for (running) Node.js (servers) build on TOP of node
 - is an Backend Framework
 - for Server Side Applications
@@ -753,8 +754,8 @@ we have to use a third party service (Mail Service)
 
 
 
-          COOKIES   HOW TO SETUP COOKIES
-          _______
+          HOW TO SETUP COOKIES
+          ____________________
 
   res.setHeader('Set-Cookie', 'loggedIn=true');
   
