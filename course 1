@@ -7,6 +7,7 @@ SERVING STATIC FILES FROM A FOLDER (and not from a ROUTE) (CSS FILE, IMAGES etc.
 DOM (Manipulation) - 590
 STATUSCODES - 600
 TYPES OF ERRORS - 620
+TEMPLATING ENGINES (EJS) -> FOR  DYNAMIC  OR REALTIME CONTENT/FEATURES IN THE FRONTEND - 666
 MVC (ARCHITECTURE) / DESIGN PATTERN - 740
 SENDING E-MAIL <how to> - 744
 HOW TO SETUP COOKIES  - 755
@@ -663,36 +664,37 @@ CORS Error (Lektion 366) -> solving only on our?? server
 
 
 
+          TEMPLATING ENGINES (EJS) -> FOR  DYNAMIC  OR REALTIME CONTENT/FEATURES IN THE FRONTEND 
+          ______________________________________________________________________________________
 
-          FOR  DYNAMIC  OR REALTIME CONTENT / FEATURES IN THE FRONTEND 
-                    ---> we use --->  TEMPLATING ENGINES
-          ____________________________________________________________
-
-or View Engine. Thats why we need, in this case, when we are using EJS -> we need a Views folder!
+or View Engine. ??Thats why we need, in this case,?? 
 
 
-for example:
+
+TEMPLATING ENGINES:
+
 PUG
-Handlebars
-
+HANDLEBARS
 EJS
-- IMPORTANT ejs does not support layouts. -> but theres is a solution for
+- when using EJS -> we need a Views folder!
+- IMPORTANT ejs does not support layouts -> but theres is a solution for:
 
                    1. npm install ejs
                     
                    2. ADD to app.js file!:    
                    
-                   app.set('view engine', 'ejs');     (set -> no err)
-                   app.use('view engine', 'ejs');     (what is use doing instead of set?)
+                   app.set('view engine', 'ejs');     // (.set => we get no err)
+                   app.use('view engine', 'ejs');     
 
 
 
 
-syntax: <% %>     with this we can use javascripot in a html file. EVERY line which is NOT html, must be embedded with <% .... %> 
+Syntax: <% %>     with this we can use javascript in a html file. EVERY line which is NOT html and should be dynamic, must be embedded with <% .... %> 
 
         <%= %>    to import dynamic values into a html file   <h1> <%= value %> </h1>
         <%- %>
-        
+
+
 inline if statement in javascript  with ?
 inline else statement in javascript with :
 
@@ -716,6 +718,7 @@ add these lines
 
 
 DYNAMIC CONTENT
+_______________
 
 <% posts.forEach(function(post) { %>        <!-- this is doing the same like a for loop -->
 <%     console.log(post.content); %>
