@@ -7,7 +7,7 @@ SERVING STATIC FILES FROM A FOLDER (and not from a ROUTE) (CSS FILE, IMAGES etc.
 ROUTING - 430
 STATUSCODES - 600
 TYPES OF ERRORS - 620
-TEMPLATING ENGINES (EJS) -> FOR  DYNAMIC  OR REALTIME CONTENT/FEATURES IN THE FRONTEND - 666
+SERVER SIDE RENDERING with TEMPLATING ENGINES (EJS) -> FOR  DYNAMIC  OR REALTIME CONTENT/FEATURES IN THE FRONTEND - 666
 MVC (ARCHITECTURE) / DESIGN PATTERN - 740
 
 
@@ -627,8 +627,9 @@ CORS Error (Lektion 366) -> solving only on our?? server
 
 
 
-          TEMPLATING ENGINES (EJS) -> FOR  DYNAMIC  OR REALTIME CONTENT/FEATURES IN THE FRONTEND 
-          ______________________________________________________________________________________
+          SERVER SIDE RENDERING with TEMPLATING ENGINES (EJS) 
+          -> FOR  DYNAMIC  OR REALTIME CONTENT/FEATURES IN THE FRONTEND 
+          _____________________________________________________________
 
 or View Engine. ??Thats why we need, in this case,?? 
 
@@ -642,20 +643,25 @@ EJS
 - when using EJS -> we need a Views folder!
 - IMPORTANT ejs does not support layouts -> but theres is a solution for:
 
-                   1. npm install ejs
+                   1. npm i ejs
                     
-                   2. ADD to app.js file!:    
+                   2. app.js file:    
                    
                    app.set('view engine', 'ejs');     // (.set => we get no err)
                    app.use('view engine', 'ejs');     
 
+                    3. create a views folder (neccessary for using ejs files)
+
+                    4. create a template index.ejs file
 
 
+Syntax: 
 
-Syntax: <% %>     with this we can use javascript in a html file. EVERY line which is NOT html and should be dynamic, must be embedded with <% .... %> 
+          <%= %>    to import / (output) a VALUES  <%= value %> 
 
-        <%= %>    to import dynamic values into a html file   <h1> <%= value %> </h1>
-        <%- %>
+          <% %>     with this we can use javascript in a html file. EVERY line which is NOT html and should be dynamic, must be embedded with <% .... %> 
+        
+          <%- %>
 
 
 inline if statement in javascript  with ?
