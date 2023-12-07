@@ -143,6 +143,24 @@ should look like this now:
 
 
 
+ERROR HANDLING -> ndb
+_____________________
+
+1. sudo npm i ndb --global
+
+2. package.json file:
+
+add script:
+
+"scripts": {
+    "start": "nodemon xxx.js",
+    "debug": "ndb server.js"  <- this line
+},
+...
+
+3. npm run debug
+
+
 
 browserify
 __________
