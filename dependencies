@@ -162,6 +162,40 @@ add script:
 
 
 
+
+EMAIL AUTHENTICATION
+____________________
+
+npm i validator
+
+-> validates the right 'email format' of a email like:  foo@bar.de
+
+
+userModel.js:
+
+const mongoose = require('mongoose');
+const validator = require('validator');
+
+
+const userSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: [true, 'A Tour must have a name'],
+    trim: true
+  },
+  email: {
+    type: String,
+    required: [true, 'A Tout must have a email!'],
+    unique: true,
+    trim: true,
+    lowercase: true,
+    validate: [validator.isEmail, 'Please provide a valid email']
+  }
+});
+
+
+
+
 browserify
 __________
 
