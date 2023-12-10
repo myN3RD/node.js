@@ -1,7 +1,35 @@
-    APIs  (Webserver) Application Programming Interface
+FAKE REST API for development - 96
+
+
+REST HTTP Methods (Verbs) - 140
+
+ENDPOINTS - 195
+REST Principles - 205
+
+
+
+
+
+********************************
+
+
+
+
+
+
+
+
+APIs  (Webserver) Application Programming Interface
     _________________
+
+
+ABSTRACT:
+
+FRONTEND   API   BACKEND
+
+
           
-REST      |       GraphQL..
+REST      |       GraphQL..    etc....
 
 Types of Requests that the Backend allows -> calls API
 
@@ -130,8 +158,8 @@ HTML, Plain Text, XML, JSON
                            
                            
                            
-            HTTP Methods (Verbs)
-            ____________________
+            REST HTTP Methods (Verbs)
+            _________________________
             
    
   GET (request) to get / (read) a resource or data FROM the SERVER -> BACK to the CLIENT.
