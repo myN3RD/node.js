@@ -9,7 +9,7 @@ STATUSCODES - 600
 TYPES OF ERRORS - 620
 SERVER SIDE RENDERING with TEMPLATING ENGINES (EJS) -> FOR  DYNAMIC  OR REALTIME CONTENT/FEATURES IN THE FRONTEND - 666
 MVC (ARCHITECTURE) / DESIGN PATTERN - 740
-PASSWORD ENCRYPTION - 760
+PASSWORD ENCRYPTION/HASHING - 760
 
 
 
@@ -757,8 +757,8 @@ How to use sessions with mongodb        npm install --save connect-mongodb-sessi
 
 
 
-          PASSWORD ENCRYPTION
-          ___________________
+          PASSWORD ENCRYPTION/HASHING
+          ___________________________
 
 npm i bcryt
 
