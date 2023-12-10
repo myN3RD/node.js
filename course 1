@@ -20,7 +20,7 @@ ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED
 SENDING E-MAIL <how to> - 744
 HOW TO SETUP COOKIES  - 755
 SESSIONS - 764
-WEBSOCKETS - 790
+WEBSOCKETS (API) - 802 
 OAUTH - 860
 DOTENV - 880
 
@@ -799,8 +799,8 @@ The flash is a special area of the session used for storing messages. Messages a
 
 
 
-          WEBSOCKETS     
-          __________
+          WEBSOCKETS (API)    
+          ________________
 
 FAB -> https://socket.io/docs/v4/client-installation/
 perfect guide -> https://socket.io/get-started/chat 
