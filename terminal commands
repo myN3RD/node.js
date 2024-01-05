@@ -14,3 +14,4 @@ ls     = lists all the content inside the current path
 cp     = to make a copy of a file
 cp -r  = to make a copy of a folder and all its content
 mv     = to move a file or folder -> mv file.txt destination/  
+clear  = clears the terminal
