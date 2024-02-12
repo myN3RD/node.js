@@ -149,9 +149,11 @@ VSCODE Extension!
 
 allows us to run JS code...
 
--> in vscode: shift + command  + p
+1. open a new terminal
+2. -> in vscode: shift + command  + p
+3. type in the searchbar -> quokka start -> "Start on Current File"
 
-type in the serachbar -> quokka start -> (2 one) -> Start on current File
+-> now we see different stuff in the terminal, and a new icon from quokka in the sedebar of vscode
 
 
 
