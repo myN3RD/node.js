@@ -96,7 +96,6 @@ GET /api/v1/tours 200 5.709 ms - 8775
 
 
 
-
 ESLint
 ______
 
@@ -140,6 +139,19 @@ should look like this now:
     "no-unused-vars": ["error", { "argsIgnorePattern": "req|res|next|val" }]
   }
 }
+
+
+
+QUOKKA 
+______
+
+VSCODE Extension!
+
+allows us to run JS code...
+
+-> in vscode: shift + command  + p
+
+type in the serachbar -> quokka start -> (2 one) -> Start on current File
 
 
 
