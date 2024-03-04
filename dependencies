@@ -231,4 +231,16 @@ browserify
 __________
 
 
+
+
+VALIDATORS mongoose (only??)
+__________
+
+for implementing into the mongoose model we create
+
+
+https://github.com/validatorjs/validator.js
+-> SCROLL DOWN to the docs
+
+
         
