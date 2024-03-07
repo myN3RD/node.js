@@ -762,8 +762,14 @@ How to use sessions with mongodb        npm install --save connect-mongodb-sessi
 
 npm i bcryt
 
+
 NOTE:
 best place to implement password encryption is the model (User Model for example)
+NOT in the controllers!
+
+"FAT MODEL, THIN CONTROLLERS"
+
+
 
 const bcrypt = require('bcrypt');
 const saltRounds = 12;              // 12 rounds is enough these days
@@ -782,6 +788,24 @@ To check a password:
 bcrypt.compare(myPlaintextPassword, hash, function(err, result) {
     // result == true
 });
+
+
+
+// .pre (document middleware) => Pre hook -> we set the pre-middleware on 'save'  
+userSchema.pre('save', async function(next) {
+  // Only run this function, if password was not modified ->  when the user is changing his email for example
+  if (!this.isModified('password')) 
+    return next();
+
+  // hash(encrypt) password with 12 saltrounds
+  this.password = await bcrypt.hash(this.password, 12);
+  // delete passwordConfirm field
+  this.passwordConfirm = undefined;
+  next();
+});
+
+// creaing the MODEL out of the SCHEMA
+const User = mongoose.model('User', userSchema);
 
 
 
