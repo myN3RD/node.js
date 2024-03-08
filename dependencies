@@ -1,7 +1,8 @@
 aka npm packages
 
 
-regular dependencies          dev(elopment) dependencies
+
+REGULAR DEPENDENCIES          DEV(elopment) DEPENDENCIES
                               (for developing the app)
 ____________________          __________________________
 
@@ -13,17 +14,20 @@ npm i dependency              npm i dependency --save-dev
 
 
 
-NOTE 
-There are 2 types of installation
 
-local install (only in the project)          global install (aviable anywhere on the maschine)
+NOTE :
+
+There are 2 types of installation:
+
+
+local install (only in the project)          global install (avaiable anywhere on the maschine)
                                              sudo npm i dependency --global
 
 
 
 
 
-FYI
+FYI :
 
 "nodemon": "^3.0.1"
 
@@ -44,6 +48,8 @@ the other two dont break our code.
 lecture 21
 
 
+
+
           DEINSTALL A PACKAGE
           ___________________
 
@@ -52,11 +58,12 @@ npm uninstall dependency
 
 
 
-          USEFUL NPM DEPENDENCIES
+********* USEFUL NPM DEPENDENCIES **********
           _______________________
 
-slugify 
-_______
+
+          SLUGIFY 
+          _______
 
 HOW TO CREATE A 'SLUG': (the data for the dataObject comes from the json file (its necessary!))
 
@@ -67,13 +74,13 @@ console.log(slugs);
 
 
 
-nodemon (for dev)
-_________________
+          nodemon (for dev)
+          _________________
 
 
 
-morgan
-______
+          MORGAN
+          ______
 
 -> when we work with APIs -> to see request data right in the console
 
@@ -96,8 +103,8 @@ GET /api/v1/tours 200 5.709 ms - 8775
 
 
 
-ESLint
-______
+          ESLint
+          ______
 
 ESLint is all about coding Rules! -> we can configure the Rules how we want them.
 
@@ -142,8 +149,8 @@ should look like this now:
 
 
 
-QUOKKA 
-______
+          QUOKKA 
+          ______
 
 VSCODE Extension!
 
@@ -157,8 +164,8 @@ allows us to run JS code...
 
 
 
-ERROR HANDLING -> ndb
-_____________________
+          ERROR HANDLING -> ndb
+          _____________________
 
 1. sudo npm i ndb --global
 
@@ -177,8 +184,8 @@ add script:
 
 
 
-EMAIL AUTHENTICATION
-____________________
+          EMAIL AUTHENTICATION
+          ____________________
 
 npm i validator
 
@@ -227,8 +234,8 @@ module.exports = User;
 
 
 
-JSON WEB TOKEN
-______________
+          JSON WEB TOKEN
+          ______________
 
 npm i jsonwebtoken
 
@@ -245,16 +252,22 @@ JWT_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxx # pw string -> at least 32 charakters!
 JWT_EXPIRES_IN=90d #10h 5m 3s (how to define)
 
 
+JWT DEBUGGER
+____________
+
+https://jwt.io/
 
 
-browserify
-__________
+
+
+          browserify
+          __________
+  
 
 
 
-
-VALIDATORS mongoose (only??)
-__________
+          VALIDATORS mongoose (only??)
+          __________
 
 for implementing into the mongoose model we create
 
