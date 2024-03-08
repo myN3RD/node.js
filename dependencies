@@ -227,6 +227,26 @@ module.exports = User;
 
 
 
+JSON WEB TOKEN
+______________
+
+npm i jsonwebtoken
+
+https://github.com/auth0/node-jsonwebtoken
+
+-> for signing
+-> and verifyfing
+
+
+
+config.env file:
+
+JWT_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxx # pw string -> at least 32 charakters!
+JWT_EXPIRES_IN=90d #10h 5m 3s (how to define)
+
+
+
+
 browserify
 __________
 
