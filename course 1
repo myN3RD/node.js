@@ -597,15 +597,14 @@ const date = require(__dirname + '/date.js');
 201 Created -> when we have overwritten a json file for example
 204 Deleted -> means: No Content
 4** Client Error
+401 Is not authorized / Unauthorized
 5** Server Error
 500 Internal Server Error
 
 
 
 NPM (Package Manager)
-3rd Party Packages sind "Dependencies" -> findet man unter  npm Repository
-Zum installieren ->
-Befehl: npm install name
+3rd Party Packages are "Dependencies" ->  npm Repository
 
 
 // 404 
@@ -619,7 +618,7 @@ appExpress.use((req, res, next) => {
           TYPES OF ERRORS
           _______________
 
-Syntax Errors = Typos (something is wrong with our code) 
+Syntax Errors = Typos (something is wrong with our code - wrong writting) 
 Runtime Erros / hat wohl noch anderen Namen
 Logical Errors -> (werden nicht angezeigt) -> findet man ggf. mit dem "debugger"
 
@@ -641,6 +640,7 @@ TEMPLATING ENGINES:
 PUG
 HANDLEBARS
 EJS
+
 - when using EJS -> we need a Views folder!
 - IMPORTANT ejs does not support layouts -> but theres is a solution for:
 
@@ -665,7 +665,7 @@ Syntax:
           <%- %>
 
 
-inline if statement in javascript  with ?
+inline if statement in javascript with ?
 inline else statement in javascript with :
 
 example:  <a class="<%= path === 'admin/add-product' ? 'active' : '' %>" href="/">Shop</a>
@@ -708,7 +708,7 @@ _______________
 
                Routes
                  |
-Models Views Controllers
+Models  Views  Controllers
 
 = Seperation of Concerns
 
@@ -719,6 +719,7 @@ Models Views Controllers
 ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED 
 **************************************************************************************************************************************
 ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED
+
 
 
 
@@ -888,25 +889,30 @@ npm i passport
 npm i dotenv
 
 - for environment variables
-- for NOT showing sensitive/privat data like API or encryption keys or mongoDB login data etc.
+- for NOT showing sensitive/private data like API or encrypted keys or mongoDB login data etc.
 
 
 app.js:
 
-require('dotenv').config()
+const dotenv = require('dotenv').config();
 
 console.log(process.env) // remove this after you've confirmed everything is working
+
 
 
 CONFIGURATION
 _____________
 
 .env file has to be in the root folder!
-naming has to be .env !
+name of the file has to be -> config.env
 
 
-SYNTAX RULES: we have key value pairs (no "" needed)
+SYNTAX RULES: 
+-> we have key value pairs (no "" needed)
 
 NAME=VALUE
 SECRET=ThisIsOurSecret
 API_KEY=jdiuwjwnduidnwoqidnqidno
+
+JWT_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxx   # pw string -> at least 32 charakters!
+JWT_EXPIRES_IN=90d #10h 5m 3s
