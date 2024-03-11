@@ -769,6 +769,8 @@ NOT in the controllers!
 
 "FAT MODEL, THIN CONTROLLERS"
 
+- the is NO way to encryp a hashed/encryped password "backward"
+
 
 
 const bcrypt = require('bcrypt');
