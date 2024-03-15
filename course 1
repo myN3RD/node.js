@@ -12,7 +12,6 @@ MVC (ARCHITECTURE) / DESIGN PATTERN - 740
 SECURITY \ PASSWORD ENCRYPTION/HASHING - 760 (NEVER USE ANOTHER RESOURCE AS JONAS FOR THIS LECTURE)
 
 
-
 ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED
 ***********************************************************************************************************************************************
 ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED
@@ -24,6 +23,7 @@ WEBSOCKETS (API) - 802
 OAUTH - 860
 DOTENV - 880
 AUTHENTICATION -
+AUTHORIZATION - 
 
 
 ***************
@@ -811,6 +811,21 @@ userSchema.pre('save', async function(next) {
 const User = mongoose.model('User', userSchema);
 
 
+
+
+          AUTHENTICATION 
+          ______________
+
+
+
+
+
+          AUTHORIZATION 
+          –––––––––––––
+
+Like a Admin
+
+403 -> no authorization
 
 
           CSRF PROTECTION
