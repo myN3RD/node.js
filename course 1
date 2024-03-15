@@ -597,7 +597,9 @@ const date = require(__dirname + '/date.js');
 201 Created -> when we have overwritten a json file for example
 204 Deleted -> means: No Content
 4** Client Error
-401 Is not authorized / Unauthorized
+401 not authorized / Unauthorized
+403 no authorization 
+
 5** Server Error
 500 Internal Server Error
 
