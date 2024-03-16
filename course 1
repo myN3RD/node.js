@@ -732,8 +732,42 @@ ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED
 we have to use a third party service (Mail Service)
 - like https://api.sender.net/
 
-- npm install --save nodemailer
-- npm install --save nodemailer nodemailer-sendgrid-transport
+
+Dependencie:
+
+NODEMAILER
+__________
+
+npm install --save nodemailer
+npm install --save nodemailer nodemailer-sendgrid-transport
+npm i nodemailer
+
+in order to send emails, we have to follow 3 steps
+
+1) create a transporter (its a service who sends the email (node.js is not doing this btw))
+2) define email options
+3) send the email with nodemailer
+
+
+
+FAKE EMAIL TO SEND TO CLIENTS
+_____________________________
+
+1) LOGIN: https://mailtrap.io/
+
+2) https://mailtrap.io/inboxes/2705806/messages
+
+3) CLICK ON: "Show Credentials"
+
+4)   USE: SMTP: username -> include into the config.env file
+4.1) USE: SMTP: password -> include into the config.env file
+
+
+->
+EMAIL_USERNAME=username
+EMAIL_PASSWORD=password
+EMAIL_HOST=host
+EMAIL_PORT=25
 
 
 
