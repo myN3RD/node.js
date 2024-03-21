@@ -78,6 +78,15 @@ console.log(slugs);
           _________________
 
 
+          HELMET
+          ______
+
+use in EVERY express app!
+
+to set secure http headers
+
+
+
 
           MORGAN
           ______
