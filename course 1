@@ -599,6 +599,8 @@ const date = require(__dirname + '/date.js');
 4** Client Error
 401 not authorized / Unauthorized
 403 no authorization 
+429 Too Many Requests
+
 
 5** Server Error
 500 Internal Server Error
