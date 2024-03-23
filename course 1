@@ -335,6 +335,11 @@ app.use(express.static(path.join(__dirname, 'folder'))); // makes it like if we 
 app.use("/images", express.static("images")); _/ _/ _/ WORKS BEST SO FAR !!!
 
 
+SAFE DEAL:
+const path = require('path'); // to manipulate path names
+app.set('views', path.join(__dirname, 'views')); // + -> using the path module
+-> // path join -> will always create a correct path!
+
 
 html file:
 
@@ -651,16 +656,21 @@ ___
 
 IMPORTANT EJS does not support layouts -> but theres is a solution for:
 
-                   1. npm i ejs
+1. npm i ejs
                     
-                   2. app.js file:    
+2. app.js file:    
                    
-                   app.set('view engine', 'ejs');     // (.set => we get no err)
-                   app.use('view engine', 'ejs');     
+          app.set('view engine', 'ejs'); 
 
-                    3. create a views folder (neccessary for using ejs files)
+app.get('/', (req, res) => {
+  res.status(200).render('file'); // -> to render the file
+});
 
-                    4. create a template index.ejs file
+
+
+3. create a views folder (neccessary for using ejs files)
+
+4. create a (template) index.ejs file
 
 
 Syntax: 
@@ -677,9 +687,6 @@ inline else statement in javascript with :
 
 example:  <a class="<%= path === 'admin/add-product' ? 'active' : '' %>" href="/">Shop</a>
 
-
-how to use? -> with  render  method
-res.render....
 
 
 
@@ -713,7 +720,7 @@ ___
 const path = require('path'); // to manipulate path names
 ...
 ...
-app.set('view-engine', 'pug');
+app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views')); // + -> using the path module
 
 
