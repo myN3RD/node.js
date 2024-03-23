@@ -803,7 +803,11 @@ EMAIL_PORT=25
           HOW TO SETUP COOKIES
           ____________________
 
-  res.setHeader('Set-Cookie', 'loggedIn=true');
+
+npm i cookie-parser
+
+
+res.setHeader('Set-Cookie', 'loggedIn=true');
   
   
 
@@ -880,7 +884,17 @@ const User = mongoose.model('User', userSchema);
           AUTHENTICATION 
           ______________
 
+LOGIN FUNCTIONALITY
+___________________
 
+npm i axios
+
+
+
+_________________________________
+https://cdnjs.com/libraries/axios
+-> COPY THIS LINE
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js" integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
 
