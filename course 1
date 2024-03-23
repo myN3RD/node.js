@@ -649,7 +649,7 @@ EJS
 EJS
 ___
 
-- IMPORTANT EJS does not support layouts -> but theres is a solution for:
+IMPORTANT EJS does not support layouts -> but theres is a solution for:
 
                    1. npm i ejs
                     
@@ -709,6 +709,7 @@ _______________
 PUG
 ___
 
+1)
 const path = require('path'); // to manipulate path names
 ...
 ...
@@ -716,6 +717,8 @@ app.set('view-engine', 'pug');
 app.set('views', path.join(__dirname, 'views')); // + -> using the path module
 
 
+
+2) create a .pug file (= template)
 
 
 
