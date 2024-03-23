@@ -631,12 +631,9 @@ CORS Error (Lektion 366) -> solving only on our?? server
 
 
 
-          SERVER SIDE RENDERING with TEMPLATING ENGINES (EJS) 
-          -> FOR  DYNAMIC  OR REALTIME CONTENT/FEATURES IN THE FRONTEND 
+          SERVER SIDE RENDERING with TEMPLATING ENGINES 
+          -> FOR  DYNAMIC OR REALTIME CONTENT/FEATURES IN THE FRONTEND 
           _____________________________________________________________
-
-or View Engine. ??Thats why we need, in this case,?? 
-
 
 
 TEMPLATING ENGINES:
@@ -645,8 +642,14 @@ PUG
 HANDLEBARS
 EJS
 
-- when using EJS -> we need a Views folder!
-- IMPORTANT ejs does not support layouts -> but theres is a solution for:
+- when using PUG or EJS -> we need a Views folder!
+
+
+
+EJS
+___
+
+- IMPORTANT EJS does not support layouts -> but theres is a solution for:
 
                    1. npm i ejs
                     
@@ -700,6 +703,19 @@ _______________
 <!-- MAGIC LINE to include it into the website  LEKTION 304 -->
 <p> <%= post.content %> </p>            
 <% }); %>
+
+
+
+PUG
+___
+
+const path = require('path'); // to manipulate path names
+...
+...
+app.set('view-engine', 'pug');
+app.set('views', path.join(__dirname, 'views')); // + -> using the path module
+
+
 
 
 
