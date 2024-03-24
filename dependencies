@@ -295,6 +295,22 @@ npm i parcel
 
 
 
+
+                    AXIOS
+                    _____
+
+npm install axios
+
+
+import axios from 'axios';
+
+https://cdnjs.com/libraries/axios
+->
+script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js')
+
+
+
+
         
 
         
