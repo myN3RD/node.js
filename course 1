@@ -603,7 +603,7 @@ const date = require(__dirname + '/date.js');
 204 Deleted -> means: No Content
 4** Client Error
 401 not authorized / Unauthorized
-403 no authorization 
+403 no authorization / forbidden
 429 Too Many Requests
 
 
