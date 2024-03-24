@@ -15,6 +15,7 @@ npm i dependency              npm i dependency --save-dev
 
 
 
+
 NOTE :
 
 There are 2 types of installation:
@@ -22,7 +23,6 @@ There are 2 types of installation:
 
 local install (only in the project)          global install (avaiable anywhere on the maschine)
                                              sudo npm i dependency --global
-
 
 
 
@@ -193,8 +193,8 @@ add script:
 
 
 
-          EMAIL AUTHENTICATION
-          ____________________
+                    EMAIL AUTHENTICATION
+                    ____________________
 
 npm i validator
 
@@ -243,8 +243,8 @@ module.exports = User;
 
 
 
-          JSON WEB TOKEN
-          ______________
+                    JSON WEB TOKEN
+                    ______________
 
 npm i jsonwebtoken
 
@@ -269,14 +269,15 @@ https://jwt.io/
 
 
 
-          browserify
-          __________
-  
+                    browserify
+                    __________
+
+to set secure headers!??!!!
 
 
 
-          VALIDATORS mongoose (only??)
-          __________
+                    VALIDATORS mongoose (only??)
+                    __________
 
 for implementing into the mongoose model we create
 
@@ -284,5 +285,16 @@ for implementing into the mongoose model we create
 https://github.com/validatorjs/validator.js
 -> SCROLL DOWN to the docs
 
+
+
+
+                    PARCEL
+                    ______
+
+npm i parcel
+
+
+
+        
 
         
