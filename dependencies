@@ -311,6 +311,16 @@ script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js')
 
 
 
+                    SHARP (IMAGE RESIZEING)
+                    _____
+
+npm i sharp
+
+const sharp = require('sharp');
+
+
+
+
         
 
         
