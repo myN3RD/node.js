@@ -165,6 +165,9 @@ never share the nodes modules folder (there is no need for) -its way to big, or 
           VSCode SETUP
           ____________
 
+npm i node@21.0.0
+
+
 npm node package manager -> comes automatically with node
 
 1. (run in terminal) npm init -> to get the package.json (file) => file includes all the packages (dependencies) which are installed in node
