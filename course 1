@@ -646,7 +646,7 @@ CORS Error (Lektion 366) -> solving only on our?? server
 
 TEMPLATING ENGINES:
 
-PUG
+PUG 
 HANDLEBARS
 EJS
 
@@ -718,6 +718,10 @@ _______________
 
 PUG
 ___
+
+HTML to PUG converter:
+-> https://html2pug.vercel.app/
+
 
 1)
 const path = require('path'); // to manipulate path names
