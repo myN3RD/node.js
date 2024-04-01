@@ -66,8 +66,8 @@ module.exports = (xxx, xxx) => { // thats a anynomous function which we export f
 
 
 
-          EVENT LOOP
-          __________
+                    EVENT LOOP
+                    __________
 
 lecture 32
 
@@ -93,16 +93,16 @@ Events, Event Loop:
 
 
 
-          SHOURTCUTS
-          __________
+                    SHOURTCUTS
+                    __________
 
 open dev tools on chrome: Option + ⌘ + J 
 
 
 
 
-          WHEN WE WRITE CODE
-          __________________
+                    WHEN WE WRITE CODE
+                    __________________
 
 1. Safe File                                                                                 SAVE
 2. Start Server (in Terminal -> node (filename) app.js                                       EXECUTE
@@ -112,14 +112,13 @@ open dev tools on chrome: Option + ⌘ + J
 
 
 
-          USING/REQUIERING MODULES
-          ________________________
+                    USING/REQUIERING MODULES
+                    ________________________
 
-- npm packages are also called MODULE(S)
+npm packages are also called npm MODULE(S)
 
           
-require KEYWORD -> to import files 
-                -> or npm packages
+require KEYWORD -> to import files or npm packages
 
 
 const fs = require("fs"); // = filesystem package core module
@@ -128,42 +127,46 @@ random -> for creating the message.txt file
 fs.writeFileSync("message.txt", "DUMMY");
 
 
-BEST CASE ORDER of using MODULES:
+BEST CASE ORDER of used MODULES:
 
 1. that are the 'CORE' MODULES
+
 const fs = require("fs");
 const http = require("http");
 const url = require("url");
 
+
 2. requirering 3 party modules
+
 const slugify = require('slugify');
+
 
 3. OWN IMPORTED MODULES
 const replaceTemplate = require('./modules/replaceTemplates');
 
 
+
 NOTE:
-
-never share the nodes modules folder (there is no need for) -its way to big, or upload it on github!
-
+never SHARE the nodes modules folder (there is no need for) -its way to big, or UPLOAD it on github or production(final) server!
 
 
 
-          SYNCHRONOUS VS. ASYNCHRONOUS CODE
-          _________________________________
 
-          SYNCHRONOUS         ASYNCHRONOUS
-               ⬇️                  ⬇️
-          BLOCKING CODE 👎    NON-BLOCKING CODE 👍
+                    SYNCHRONOUS VS. ASYNCHRONOUS CODE
+                    _________________________________
+
+                    SYNCHRONOUS         ASYNCHRONOUS
+                         ⬇️                  ⬇️
+                    BLOCKING CODE 👎    NON-BLOCKING CODE 👍
 
 
-                    CALLBACK FUNCTIONS !!?!?
+                              CALLBACK FUNCTIONS !!?!?
 
 
 
   
-          VSCode SETUP
-          ____________
+                    VSCode SETUP
+                    ____________
 
 npm i node@21.0.0
 
@@ -185,7 +188,7 @@ replace the file content with that, in the package json file ->
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"     // this line will execute/safe the app automaticly after making changes
+    "start": "nodemon app.js"                                   // this line will execute/safe the app automaticly after making changes
   },
   "author": "",
   "license": "ISC"
@@ -198,17 +201,9 @@ replace the file content with that, in the package json file ->
 
 
 
-4. OPTIONAL
 
-   If we want use ROUTES
-   npm install --save body-parser    // we just need a body parser if our website should handle http POST request data
-                                     // for parsing incoming request bodys
-
-
-
-
-          CREATING A NEW SERVER
-          _____________________
+                    CREATING A NEW SERVER
+                    _____________________
 
 const http = require("http");
 const express = require("express");
@@ -235,8 +230,8 @@ server.listen(3000);                                   // looping process (Event
 
 
 
-          MIDDLEWARE
-          __________
+                    MIDDLEWARE
+                    __________
 
 middleware is a function, that can modify the incoming REQUEST data
 
@@ -326,9 +321,9 @@ app.use(errorHandlerMiddleware)
 
 
 
-          SERVING STATIC FILES FROM A FOLDER (and not from a ROUTE)
-          (CSS FILE, IMAGES etc. FILE/FOLDER IMPORT)
-          _________________________________________________________
+                    SERVING STATIC FILES FROM A FOLDER (and not from a ROUTE)
+                    (CSS FILE, IMAGES etc. FILE/FOLDER IMPORT)
+                    _________________________________________________________
 
 app.js:
 
@@ -351,8 +346,8 @@ html file:
 
 
 
-          REQUESTS
-          ________
+                    REQUESTS
+                    ________
 
 https://www.twilio.com/blog/2017/08/http-requests-in-node-js.html
       
@@ -387,8 +382,8 @@ SUBMIT BUTTON -> is trigering a POST request (by default???)
 
 
 
-          ASYNC AWAIT REQUESTS     OPTIONAL -> then and catch is doing the same
-          ____________________
+                    ASYNC AWAIT REQUESTS     OPTIONAL -> then and catch is doing the same
+                    ____________________
 
 by default async function will always return a promise!
 
@@ -415,8 +410,8 @@ could also be used outside of a function
 
 
 
-          RESPONSES
-          _________
+                    RESPONSES
+                    _________
 
 res  means response  (Server)Backend (is now saving the data to a Database ) and after, is sending a response to the (Client)Frontend
 
@@ -448,8 +443,10 @@ import    allows a file to consume a MODUL (which is exported)
 
 
 
-          ROUTING
-          _______
+                    ROUTING
+                    _______
+
+-> for routing we use express (in real world)
 
 
 
@@ -475,12 +472,8 @@ app.route('/book')
 
 
 
-
-
-
 -> HOW TO CONNECT HTML FILE with another Files (URLs)     lecture 234 // or 70 max
 
--> for routing we use express (in real world)
 
 
 __________________________________________________
@@ -541,7 +534,8 @@ app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, './', 'views', 'index.html'))});          This will give us the file whereever it is / __dirname means directory name        
   
   
-  
+
+
 route file: (nested inside the Routes folder)
 
 const express = require('express'); ??? line neccessary?
@@ -598,8 +592,8 @@ const date = require(__dirname + '/date.js');
 
 
 
-          STATUSCODES
-          ___________
+                    STATUSCODES
+                    ___________
 
 200 Success
 201 Created -> when we have overwritten a json file for example
@@ -627,8 +621,8 @@ appExpress.use((req, res, next) => {
 
 
 
-          TYPES OF ERRORS
-          _______________
+                    TYPES OF ERRORS
+                    _______________
 
 Syntax Errors = Typos (something is wrong with our code - wrong writting) 
 Runtime Erros / hat wohl noch anderen Namen
@@ -639,9 +633,9 @@ CORS Error (Lektion 366) -> solving only on our?? server
 
 
 
-          SERVER SIDE RENDERING with TEMPLATING ENGINES 
-          -> FOR  DYNAMIC OR REALTIME CONTENT/FEATURES IN THE FRONTEND 
-          _____________________________________________________________
+                    SERVER SIDE RENDERING with TEMPLATING ENGINES 
+                    -> FOR  DYNAMIC OR REALTIME CONTENT/FEATURES IN THE FRONTEND 
+                    _____________________________________________________________
 
 
 TEMPLATING ENGINES:
@@ -737,8 +731,8 @@ app.set('views', path.join(__dirname, 'views')); // + -> using the path module
 
 
 
-          MVC (ARCHITECTURE) / DESIGN PATTERN  kind of Important
-          ___________________________________
+                    MVC (ARCHITECTURE) / DESIGN PATTERN  kind of Important
+                    ___________________________________
 
 - Model View Controller -
 
