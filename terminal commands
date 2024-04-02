@@ -9,3 +9,4 @@ cp -r  = to make a copy of a folder and all its content
 mv     = to move a file or folder -> mv file.txt destination/  
 clear  = clears the terminal
 rs     = restart !?
+rm -r  = deleting a folder -> rm -r foldername
