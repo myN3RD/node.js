@@ -24,6 +24,7 @@ OAUTH - 860
 DOTENV - 880
 AUTHENTICATION -
 AUTHORIZATION - 
+PAYPAL INTEGRATION -
 
 
 ***************
@@ -1010,3 +1011,21 @@ API_KEY=jdiuwjwnduidnwoqidnqidno
 
 JWT_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxx   # pw string -> at least 32 charakters!
 JWT_EXPIRES_IN=90d #10h 5m 3s
+
+
+
+
+
+
+
+          PAYPAL INTEGRATION 
+          __________________
+
+
+1. https://developer.paypal.com/dashboard/applications/sandbox
+
+
+2. https://developer.paypal.com/dashboard/accounts
+
+
+
