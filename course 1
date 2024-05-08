@@ -25,6 +25,7 @@ DOTENV - 880
 AUTHENTICATION -
 AUTHORIZATION - 
 PAYPAL INTEGRATION -
+STRIPE INTEGRATION -
 
 
 ***************
@@ -1026,6 +1027,21 @@ JWT_EXPIRES_IN=90d #10h 5m 3s
 
 
 2. https://developer.paypal.com/dashboard/accounts
+
+
+
+
+          STRIPE INTEGRATION 
+          __________________
+
+https://dashboard.stripe.com/test/dashboard
+
+https://dashboard.stripe.com/test/apikeys
+
+-> Public key / Veröffentlichbarer Schlüssel  (For the Frontend)
+-> Secret key / Geheimschlüssel  (For the frontend) (For the Backend)
+
+
 
 
 
