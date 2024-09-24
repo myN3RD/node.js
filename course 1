@@ -18,7 +18,7 @@ ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED
 
 SENDING E-MAIL <how to> - 744
 HOW TO SETUP COOKIES  - 755
-SESSIONS - 764
+SESSIONS - 820
 WEBSOCKETS (API) - 802 
 OAUTH - 860
 DOTENV - 880
@@ -749,6 +749,10 @@ Models  Views  Controllers
 
 
 
+
+
+
+
 ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED 
 **************************************************************************************************************************************
 ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED ADVANCED
@@ -802,10 +806,63 @@ EMAIL_PORT=25
 
 
 
-
           HOW TO SETUP COOKIES
           ____________________
 
+// FAB du kannst im browser entweder cookies, localstorage oder den DOM nutzen, um die userId zu speichern
+
+// "Die Wahl der Methode hängt davon ab, was man erreichen möchte. 
+// Cookies sind gut für serverseitige Kommunikation, während localStorage eher für clientseitige, 
+// langzeitige Datenspeicherung geeignet ist."
+
+
+
+
+- are safed in the Browser
+- can be sended back to the server, when the user hits a website
+
+
+
+FAB:
+
+// SET A COOKIE
+function setCookie(name, value, days) {
+  let expires = "";
+
+  if (days) {
+    const date = new Date();
+    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+    expires = "; expires=" + date.toUTCString();
+  }
+
+  document.cookie = `${name}=${value || ""}${expires}; path=/`;
+}
+
+// userID 123 fuer 7 tage speichern
+setCookie("userId", "123", 7);
+
+// durchsucht die gespeicherten Cookies nach einem Cookie mit einem bestimmten Namen und gibt dessen Wert zurück.
+function getCookie(name) {
+  const nameEQ = name + "=";
+  const ca = document.cookie.split(";");
+
+  for (let c of ca) {
+    while (c.charAt(0) === " ") c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) === 0) {
+      return c.substring(nameEQ.length, c.length);
+    }
+  }
+
+  return null;
+}
+
+// den cookie zurueckbekommen
+const userId = getCookie("userId");
+console.log('cookie.js', userId)
+
+
+
+----------------------
 
 npm i cookie-parser
 
