@@ -9,7 +9,7 @@ STATUSCODES - 600
 TYPES OF ERRORS - 620
 SERVER SIDE RENDERING with TEMPLATING ENGINES (EJS) -> FOR  DYNAMIC  OR REALTIME CONTENT/FEATURES IN THE FRONTEND - 666
 MVC (ARCHITECTURE) / DESIGN PATTERN - 740
-SECURITY \ PASSWORD ENCRYPTION/HASHING - 760 (NEVER USE ANOTHER RESOURCE AS JONAS FOR THIS LECTURE)
+SECURITY \ PASSWORD ENCRYPTION/HASHING - 890 (NEVER USE ANOTHER RESOURCE AS JONAS FOR THIS LECTURE)
 
 
 ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED ADCANCED
@@ -21,10 +21,10 @@ HOW TO SETUP COOKIES  - 755
 SESSIONS - 820
 WEBSOCKETS (API) - 802 
 OAUTH - 860
-DOTENV - 880
+DOTENV - 1040
 AUTHENTICATION -
 AUTHORIZATION - 
-PAYPAL INTEGRATION -
+PAYPAL INTEGRATION - 1080
 STRIPE INTEGRATION -
 
 
@@ -894,9 +894,9 @@ npm i bcryt
 
 NOTE:
 - best place to implement password encryption is the model (User Model for example)
-NOT in the controllers!
+-> NOT in the controllers!
 
-"FAT MODEL, THIN CONTROLLERS"
+"FAT MODELS, THIN CONTROLLERS"
 
 - the is NO way to encryp a hashed/encryped password "backward"
 
@@ -906,7 +906,7 @@ const bcrypt = require('bcrypt');
 const saltRounds = 12;              // 12 rounds is enough these days
 
 
-To hash a password:
+How to hash a password:
 
 bcrypt.hash(myPlaintextPassword, saltRounds, function(err, hash) {
     // Store hash in your password DB.
