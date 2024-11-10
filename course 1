@@ -241,6 +241,30 @@ It's called middleware because it stands between.
 'In the MIDDLE of the request and the response.'
 
 
+NOTE: *******************************************************************************************************************************
+
+when we assign the xxx (like currentUser) to -> req.xxx       ---> to req.   basicly
+
+so that we can then use it in a next middleware function.
+
+
+Because this request object,
+
+this is the one that travels, basically,
+
+from middleware to middleware.
+
+And so, if we want to pass data
+
+from one middleware to the next one,
+
+then we can simply put some stuff on the request object,
+
+and then that data will be available at a later point.
+
+
+
+
 SYNTAX:
 
 app.use();  // .use allows us to add a middleware function
